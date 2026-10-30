@@ -1,0 +1,13 @@
+District,Variable,Zone_definition,Zone,Error,Zone_median,Percentile_in_zone
+Nawalparasi,Temperature,Baseline zones (Step 4),Lowlands & low hills,0.96,0.974,32.0
+Nawalparasi,Temperature,Temperature + altitude zones,Lowlands & low hills,0.96,0.975,29.0
+Nawalparasi,Rainfall,Baseline zones (Step 4),Lowlands & low hills,51.588,57.886,11.0
+Nawalparasi,Rainfall,Temperature + altitude zones,Lowlands & low hills,51.588,58.64,11.0
+Lamjung,Temperature,Baseline zones (Step 4),Hills,1.028,0.876,87.0
+Lamjung,Temperature,Temperature + altitude zones,Hills,1.028,0.914,84.0
+Lamjung,Rainfall,Baseline zones (Step 4),Hills,54.488,52.001,74.0
+Lamjung,Rainfall,Temperature + altitude zones,Hills,54.488,52.004,68.0
+Dolpa,Temperature,Baseline zones (Step 4),High mountains,1.349,1.349,50.0
+Dolpa,Temperature,Temperature + altitude zones,High mountains,1.349,1.37,33.0
+Dolpa,Rainfall,Baseline zones (Step 4),High mountains,56.902,66.98,38.0
+Dolpa,Rainfall,Temperature + altitude zones,High mountains,56.902,56.902,50.0

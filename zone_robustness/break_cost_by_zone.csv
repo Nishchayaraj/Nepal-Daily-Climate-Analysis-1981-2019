@@ -1,0 +1,19 @@
+Model,Zone_definition,Zone,Districts,Median_change_pct,Post2004_better_in
+Climatology,Baseline zones (Step 4),Lowlands & low hills,29,-16.5,23
+Climatology,Baseline zones (Step 4),Hills,24,-25.4,24
+Climatology,Baseline zones (Step 4),High mountains,9,-10.4,7
+Climatology,Temperature + altitude zones,Lowlands & low hills,29,-13.1,23
+Climatology,Temperature + altitude zones,Hills,26,-25.4,24
+Climatology,Temperature + altitude zones,High mountains,7,-22.4,7
+Climatology,Stable core (baseline zones),Lowlands & low hills,21,-18.8,15
+Climatology,Stable core (baseline zones),Hills,23,-25.4,23
+Climatology,Stable core (baseline zones),High mountains,7,-22.4,7
+SARIMA,Baseline zones (Step 4),Lowlands & low hills,29,-2.3,23
+SARIMA,Baseline zones (Step 4),Hills,24,-1.8,23
+SARIMA,Baseline zones (Step 4),High mountains,9,-2.1,8
+SARIMA,Temperature + altitude zones,Lowlands & low hills,29,-2.3,23
+SARIMA,Temperature + altitude zones,Hills,26,-1.9,25
+SARIMA,Temperature + altitude zones,High mountains,7,-2.4,6
+SARIMA,Stable core (baseline zones),Lowlands & low hills,21,-2.3,15
+SARIMA,Stable core (baseline zones),Hills,23,-1.8,22
+SARIMA,Stable core (baseline zones),High mountains,7,-2.4,6

@@ -1,0 +1,9 @@
+Analysis,Features_or_method,Zone_sizes,Silhouette,ARI_vs_baseline,Districts_changed_vs_baseline,ARI_vs_official,Match_official_pct
+Baseline,K-Means,29/24/9,0.382,1.0,0,0.32,71.0
+Rain 2004+,K-Means,21/32/9,0.374,0.6,8,0.28,71.0
+Rain 1981-2003,K-Means,27/26/9,0.39,0.89,2,0.36,74.2
+No monsoon share,K-Means,28/25/9,0.422,0.94,1,0.34,72.6
+"Rain 2004+, no monsoon share",K-Means,25/28/9,0.37,0.68,6,0.25,67.7
+Temp + altitude only,K-Means,29/26/7,0.535,0.82,4,0.32,71.0
+Ward hierarchical,Ward hierarchical,27/23/12,0.372,0.69,7,0.39,75.8
+Gaussian mixture,Gaussian mixture,19/32/11,0.388,0.47,12,0.4,77.4

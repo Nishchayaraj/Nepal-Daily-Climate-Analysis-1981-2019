@@ -1,0 +1,621 @@
+District,Zone,Variable,Model,Window,RMSE,MAE,Bias,Error,Bias_pct
+Arghakhanchi,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.2401,0.9414,-0.335,1.2401,
+Arghakhanchi,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9854,0.7708,0.0158,0.9854,
+Arghakhanchi,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9754,0.7632,-0.1008,0.9754,
+Arghakhanchi,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0181,0.8164,-0.3571,1.0181,
+Arghakhanchi,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0199,0.8181,-0.3659,1.0199,
+Arghakhanchi,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,93.4322,60.54,11.0323,71.9045,8.4904
+Arghakhanchi,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),95.418,59.5616,-43.3055,73.4327,-33.3274
+Arghakhanchi,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),83.8159,57.4678,6.2242,64.5039,4.7901
+Arghakhanchi,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),71.1273,49.4973,-4.8387,54.7388,-3.7238
+Arghakhanchi,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),80.1592,55.0581,3.1773,61.6897,2.4452
+Baglung,Hills,Temp_mean,Seasonal-naive,Last training year,1.0552,0.8163,-0.0832,1.0552,
+Baglung,Hills,Temp_mean,Climatology,Full history (1981-2014),1.0199,0.8304,0.1765,1.0199,
+Baglung,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.0204,0.8309,0.1829,1.0204,
+Baglung,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9739,0.7633,0.0049,0.9739,
+Baglung,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9744,0.7636,0.0091,0.9744,
+Baglung,Hills,Precip_total,Seasonal-naive,Last training year,90.8493,62.8872,11.2995,59.02,7.3407
+Baglung,Hills,Precip_total,Climatology,Full history (1981-2014),124.7848,85.1071,-79.2351,81.0661,-51.4749
+Baglung,Hills,Precip_total,SARIMA,Full history (1981-2014),76.6358,57.7876,-14.2253,49.7862,-9.2414
+Baglung,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),80.9143,57.4942,-37.4264,52.5658,-24.314
+Baglung,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),76.486,56.4312,-25.0828,49.6889,-16.295
+Baitadi,High mountains,Temp_mean,Seasonal-naive,Last training year,1.4383,1.056,-0.4096,1.4383,
+Baitadi,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.2374,0.9062,-0.2729,1.2374,
+Baitadi,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.2343,0.9036,-0.2694,1.2343,
+Baitadi,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.2406,0.9221,-0.3586,1.2406,
+Baitadi,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.2401,0.9207,-0.3619,1.2401,
+Baitadi,High mountains,Precip_total,Seasonal-naive,Last training year,49.6607,36.8395,1.1895,80.7441,1.934
+Baitadi,High mountains,Precip_total,Climatology,Full history (1981-2014),38.9595,25.1359,-14.6403,63.3449,-23.8038
+Baitadi,High mountains,Precip_total,SARIMA,Full history (1981-2014),44.6201,33.8399,10.8057,72.5485,17.5692
+Baitadi,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),41.9844,31.1498,7.7381,68.263,12.5816
+Baitadi,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),43.6971,31.7638,9.2637,71.0478,15.062
+Bajang,High mountains,Temp_mean,Seasonal-naive,Last training year,1.5502,1.0825,-0.5457,1.5502,
+Bajang,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.3455,0.9679,-0.2469,1.3455,
+Bajang,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.3377,0.962,-0.2506,1.3377,
+Bajang,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.3505,0.9874,-0.3417,1.3505,
+Bajang,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.3486,0.9852,-0.3546,1.3486,
+Bajang,High mountains,Precip_total,Seasonal-naive,Last training year,39.4494,30.2565,-1.9478,71.4767,-3.5292
+Bajang,High mountains,Precip_total,Climatology,Full history (1981-2014),38.1352,24.7162,-16.5113,69.0955,-29.9161
+Bajang,High mountains,Precip_total,SARIMA,Full history (1981-2014),38.2192,30.0838,6.5769,69.2477,11.9164
+Bajang,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),36.3146,27.5072,3.9907,65.7969,7.2305
+Bajang,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),37.3168,27.818,5.4342,67.6127,9.846
+Banke,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.3734,1.0378,-0.169,1.3734,
+Banke,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.0346,0.8213,-0.0136,1.0346,
+Banke,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.0293,0.8152,-0.0237,1.0293,
+Banke,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.015,0.7974,-0.3129,1.015,
+Banke,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0151,0.7963,-0.3173,1.0151,
+Banke,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,73.2834,51.2888,-13.5015,62.3574,-11.4885
+Banke,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),95.8163,54.3929,-34.5417,81.5309,-29.3919
+Banke,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),75.2499,52.8869,3.0225,64.0307,2.5718
+Banke,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),73.065,49.9145,-4.1912,62.1716,-3.5663
+Banke,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),75.2866,51.7758,2.1624,64.062,1.84
+Bara,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.3711,1.0434,-0.6311,1.3711,
+Bara,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9346,0.7084,-0.0866,0.9346,
+Bara,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.029,0.828,-0.3872,1.029,
+Bara,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.1048,0.9141,-0.5722,1.1048,
+Bara,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.1163,0.9264,-0.5935,1.1163,
+Bara,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,65.3483,43.8807,12.312,62.4792,11.7714
+Bara,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),63.9885,37.6572,-25.0919,61.1791,-23.9902
+Bara,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),59.479,39.5351,3.7491,56.8675,3.5845
+Bara,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),55.5876,38.0163,3.7347,53.147,3.5707
+Bara,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),57.3285,38.7177,4.1479,54.8115,3.9658
+Bardiya,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.532,1.1949,-0.3178,1.532,
+Bardiya,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.1739,0.9564,-0.1013,1.1739,
+Bardiya,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.1658,0.9416,-0.15,1.1658,
+Bardiya,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.2145,0.959,-0.504,1.2145,
+Bardiya,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.2149,0.9584,-0.5076,1.2149,
+Bardiya,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,66.0642,46.6805,-2.8768,64.9778,-2.8295
+Bardiya,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),82.5689,48.3312,-22.7429,81.2112,-22.369
+Bardiya,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),72.55,51.7521,15.0903,71.357,14.8421
+Bardiya,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),68.9638,48.3859,8.5637,67.8298,8.4229
+Bardiya,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),71.9145,50.0432,13.5638,70.732,13.3408
+Bhaktapur,Hills,Temp_mean,Seasonal-naive,Last training year,0.9478,0.7048,-0.2416,0.9478,
+Bhaktapur,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8458,0.6292,-0.1208,0.8458,
+Bhaktapur,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.844,0.6306,-0.1131,0.844,
+Bhaktapur,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.859,0.6806,-0.2438,0.859,
+Bhaktapur,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8582,0.6819,-0.2342,0.8582,
+Bhaktapur,Hills,Precip_total,Seasonal-naive,Last training year,51.4482,34.8858,16.2398,62.688,19.7877
+Bhaktapur,Hills,Precip_total,Climatology,Full history (1981-2014),49.7991,32.0294,-22.5774,60.6786,-27.5099
+Bhaktapur,Hills,Precip_total,SARIMA,Full history (1981-2014),44.7635,31.0593,6.6552,54.5429,8.1091
+Bhaktapur,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),40.2465,28.1596,2.3025,49.0392,2.8055
+Bhaktapur,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),43.5586,30.1754,5.1458,53.0748,6.27
+Chitawan,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.1854,0.903,-0.2818,1.1854,
+Chitawan,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.998,0.7655,0.2346,0.998,
+Chitawan,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9579,0.7279,0.0082,0.9579,
+Chitawan,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.97,0.7609,-0.2117,0.97,
+Chitawan,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9724,0.7667,-0.2228,0.9724,
+Chitawan,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,73.2386,52.834,-4.5863,51.4694,-3.2231
+Chitawan,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),108.7279,73.236,-66.3474,76.41,-46.6265
+Chitawan,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),73.7614,53.0648,-20.6397,51.8368,-14.5048
+Chitawan,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),73.9789,50.954,-30.6646,51.9896,-21.5499
+Chitawan,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),73.3978,51.4879,-26.6238,51.5812,-18.7102
+Dadeldhura,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.3765,1.0485,-0.1429,1.3765,
+Dadeldhura,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.1412,0.8766,-0.2345,1.1412,
+Dadeldhura,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.1388,0.8768,-0.2256,1.1388,
+Dadeldhura,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.141,0.8945,-0.3843,1.141,
+Dadeldhura,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.1378,0.8937,-0.3733,1.1378,
+Dadeldhura,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,58.3482,40.1097,-0.141,70.4523,-0.1703
+Dadeldhura,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),52.4653,33.4782,-15.978,63.3491,-19.2926
+Dadeldhura,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),57.6242,42.0573,18.3271,69.5782,22.129
+Dadeldhura,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),53.5545,38.7075,13.6473,64.6642,16.4784
+Dadeldhura,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),56.3094,39.4171,16.2258,67.9907,19.5918
+Dailekh,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.2085,0.927,-0.1254,1.2085,
+Dailekh,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.974,0.7645,-0.095,0.974,
+Dailekh,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9724,0.7636,-0.0888,0.9724,
+Dailekh,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9677,0.7523,-0.276,0.9677,
+Dailekh,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9673,0.7521,-0.2738,0.9673,
+Dailekh,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,60.3356,44.5473,-8.105,57.7029,-7.7513
+Dailekh,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),75.6316,45.2617,-29.3375,72.3315,-28.0574
+Dailekh,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),62.948,46.7275,10.1679,60.2013,9.7242
+Dailekh,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),58.5651,41.9703,3.0536,56.0097,2.9203
+Dailekh,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),61.0769,43.4742,7.6747,58.4119,7.3398
+Dang,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.1807,0.8854,-0.2186,1.1807,
+Dang,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9564,0.7422,-0.0864,0.9564,
+Dang,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9548,0.7409,-0.0825,0.9548,
+Dang,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9545,0.7451,-0.3057,0.9545,
+Dang,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.954,0.7446,-0.3043,0.954,
+Dang,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,74.159,51.6377,-0.373,62.7112,-0.3154
+Dang,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),94.8213,54.4707,-34.8849,80.184,-29.4998
+Dang,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),79.2299,56.1263,9.8849,66.9994,8.359
+Dang,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),73.134,50.5076,0.0484,61.8445,0.0409
+Dang,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),78.1636,54.2118,7.6561,66.0977,6.4743
+Darchula,High mountains,Temp_mean,Seasonal-naive,Last training year,1.4383,1.056,-0.4096,1.4383,
+Darchula,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.2374,0.9062,-0.2729,1.2374,
+Darchula,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.2343,0.9036,-0.2694,1.2343,
+Darchula,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.2406,0.9221,-0.3586,1.2406,
+Darchula,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.2401,0.9207,-0.3619,1.2401,
+Darchula,High mountains,Precip_total,Seasonal-naive,Last training year,49.6607,36.8395,1.1895,80.7441,1.934
+Darchula,High mountains,Precip_total,Climatology,Full history (1981-2014),38.9595,25.1359,-14.6403,63.3449,-23.8038
+Darchula,High mountains,Precip_total,SARIMA,Full history (1981-2014),44.6201,33.8399,10.8057,72.5485,17.5692
+Darchula,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),41.9844,31.1498,7.7381,68.263,12.5816
+Darchula,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),43.6971,31.7638,9.2637,71.0478,15.062
+Dhading,Hills,Temp_mean,Seasonal-naive,Last training year,1.0058,0.7175,-0.2604,1.0058,
+Dhading,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8725,0.6442,-0.0108,0.8725,
+Dhading,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8704,0.644,-0.008,0.8704,
+Dhading,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8936,0.6965,-0.2678,0.8936,
+Dhading,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8924,0.6966,-0.2628,0.8924,
+Dhading,Hills,Precip_total,Seasonal-naive,Last training year,57.2393,40.2728,13.9222,57.094,13.8868
+Dhading,Hills,Precip_total,Climatology,Full history (1981-2014),64.3464,42.3125,-33.7841,64.1831,-33.6983
+Dhading,Hills,Precip_total,SARIMA,Full history (1981-2014),52.1358,37.0584,1.1489,52.0035,1.146
+Dhading,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),48.0013,33.9255,-4.3313,47.8795,-4.3203
+Dhading,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),50.5096,35.8755,-1.5445,50.3813,-1.5406
+Dhankuta,Hills,Temp_mean,Seasonal-naive,Last training year,0.9308,0.723,-0.0266,0.9308,
+Dhankuta,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8398,0.6476,-0.1704,0.8398,
+Dhankuta,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8313,0.6399,-0.1609,0.8313,
+Dhankuta,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8221,0.6334,-0.2039,0.8221,
+Dhankuta,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8127,0.6247,-0.1896,0.8127,
+Dhankuta,Hills,Precip_total,Seasonal-naive,Last training year,60.2926,36.9738,-16.5912,63.7161,-17.5332
+Dhankuta,Hills,Precip_total,Climatology,Full history (1981-2014),57.2819,34.7769,-28.3459,60.5344,-29.9554
+Dhankuta,Hills,Precip_total,SARIMA,Full history (1981-2014),46.0041,29.2371,-10.6038,48.6162,-11.2058
+Dhankuta,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),44.7525,29.0729,-11.2665,47.2935,-11.9062
+Dhankuta,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),45.1816,29.4285,-11.1935,47.7471,-11.8291
+Dhanusa,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.5524,1.2224,-0.7883,1.5524,
+Dhanusa,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.0142,0.8006,-0.3296,1.0142,
+Dhanusa,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.1222,0.9143,-0.5412,1.1222,
+Dhanusa,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.2243,1.0201,-0.7325,1.2243,
+Dhanusa,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.2391,1.0331,-0.7546,1.2391,
+Dhanusa,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,63.716,40.3618,13.6428,70.7657,15.1523
+Dhanusa,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),52.0669,32.2076,-8.4128,57.8277,-9.3436
+Dhanusa,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),52.7983,34.7589,4.6591,58.64,5.1746
+Dhanusa,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),54.8475,36.8253,11.8128,60.9159,13.1198
+Dhanusa,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),55.2688,36.8596,11.3214,61.3839,12.574
+Dolkha,Hills,Temp_mean,Seasonal-naive,Last training year,0.9492,0.7248,-0.1901,0.9492,
+Dolkha,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8597,0.6286,-0.1511,0.8597,
+Dolkha,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8581,0.6301,-0.1423,0.8581,
+Dolkha,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.841,0.627,-0.1209,0.841,
+Dolkha,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8415,0.6309,-0.11,0.8415,
+Dolkha,Hills,Precip_total,Seasonal-naive,Last training year,41.9219,28.92,0.5547,57.6653,0.763
+Dolkha,Hills,Precip_total,Climatology,Full history (1981-2014),48.3512,30.4987,-23.9812,66.5091,-32.9871
+Dolkha,Hills,Precip_total,SARIMA,Full history (1981-2014),37.4369,25.5228,-5.3301,51.496,-7.3318
+Dolkha,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),35.5005,23.7127,-6.5559,48.8323,-9.018
+Dolkha,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),37.1033,25.1009,-4.6286,51.0371,-6.3668
+Dolpa,High mountains,Temp_mean,Seasonal-naive,Last training year,1.5086,1.0865,-0.5145,1.5086,
+Dolpa,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.3625,0.9727,-0.0914,1.3625,
+Dolpa,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.3491,0.9649,-0.097,1.3491,
+Dolpa,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.3702,1.0116,-0.2261,1.3702,
+Dolpa,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.3763,1.014,-0.2949,1.3763,
+Dolpa,High mountains,Precip_total,Seasonal-naive,Last training year,43.2567,33.798,-1.2727,54.1588,-1.5934
+Dolpa,High mountains,Precip_total,Climatology,Full history (1981-2014),54.4027,35.2351,-27.544,68.1139,-34.486
+Dolpa,High mountains,Precip_total,SARIMA,Full history (1981-2014),45.4477,35.8909,7.3314,56.9019,9.1792
+Dolpa,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),41.6786,31.3434,1.222,52.183,1.53
+Dolpa,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),42.9862,32.2631,3.6015,53.8201,4.5092
+Doti,Hills,Temp_mean,Seasonal-naive,Last training year,1.3725,1.049,-0.2034,1.3725,
+Doti,Hills,Temp_mean,Climatology,Full history (1981-2014),1.1447,0.8745,-0.222,1.1447,
+Doti,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.1421,0.8741,-0.2137,1.1421,
+Doti,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.155,0.9037,-0.392,1.155,
+Doti,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.1531,0.9031,-0.3853,1.1531,
+Doti,Hills,Precip_total,Seasonal-naive,Last training year,52.4509,36.9157,-1.2003,66.0165,-1.5108
+Doti,Hills,Precip_total,Climatology,Full history (1981-2014),52.4828,33.3023,-17.4018,66.0567,-21.9025
+Doti,Hills,Precip_total,SARIMA,Full history (1981-2014),54.4264,40.8351,16.0205,68.5029,20.164
+Doti,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),50.7021,37.6109,11.5465,63.8155,14.5328
+Doti,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),52.9642,38.0255,14.0682,66.6626,17.7067
+Gorkha,Hills,Temp_mean,Seasonal-naive,Last training year,1.0279,0.7885,-0.1031,1.0279,
+Gorkha,Hills,Temp_mean,Climatology,Full history (1981-2014),1.0022,0.8077,0.0815,1.0022,
+Gorkha,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.0023,0.8083,0.0881,1.0023,
+Gorkha,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9852,0.7625,0.0057,0.9852,
+Gorkha,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9853,0.7625,0.0104,0.9853,
+Gorkha,Hills,Precip_total,Seasonal-naive,Last training year,58.8076,42.901,-2.777,49.3041,-2.3282
+Gorkha,Hills,Precip_total,Climatology,Full history (1981-2014),95.4543,67.6194,-62.6498,80.0285,-52.5253
+Gorkha,Hills,Precip_total,SARIMA,Full history (1981-2014),62.0216,45.8752,-22.1989,51.9987,-18.6115
+Gorkha,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),66.5189,47.5229,-33.9497,55.7692,-28.4633
+Gorkha,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),61.5315,47.4696,-6.0049,51.5878,-5.0345
+Gulmi,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.0412,0.7865,-0.1792,1.0412,
+Gulmi,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9517,0.7591,0.032,0.9517,
+Gulmi,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9513,0.7595,0.0379,0.9513,
+Gulmi,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9264,0.72,-0.13,0.9264,
+Gulmi,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9262,0.72,-0.127,0.9262,
+Gulmi,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,84.0313,56.0897,13.8617,61.5219,10.1486
+Gulmi,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),102.0192,66.0238,-55.6167,74.6915,-40.7187
+Gulmi,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),74.9831,51.704,3.9954,54.8975,2.9252
+Gulmi,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),66.8669,47.8203,-13.8727,48.9553,-10.1567
+Gulmi,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),72.4771,50.3781,-1.6178,53.0628,-1.1844
+Humla,High mountains,Temp_mean,Seasonal-naive,Last training year,1.8068,1.2856,-0.6895,1.8068,
+Humla,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.5394,1.1177,-0.2452,1.5394,
+Humla,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.523,1.1079,-0.2585,1.523,
+Humla,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.539,1.1221,-0.2733,1.539,
+Humla,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.5331,1.1176,-0.2962,1.5331,
+Humla,High mountains,Precip_total,Seasonal-naive,Last training year,30.0741,23.4582,-1.9502,77.1837,-5.005
+Humla,High mountains,Precip_total,Climatology,Full history (1981-2014),28.4196,19.0744,-14.9989,72.9376,-38.4939
+Humla,High mountains,Precip_total,SARIMA,Full history (1981-2014),26.3604,19.8351,-1.662,67.6528,-4.2656
+Humla,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),25.4713,18.1985,-3.0441,65.3707,-7.8125
+Humla,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),25.9859,19.1088,-1.912,66.6916,-4.9071
+Ilam,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.1246,0.8463,-0.0502,1.1246,
+Ilam,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9858,0.768,-0.3334,0.9858,
+Ilam,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9741,0.7595,-0.3333,0.9741,
+Ilam,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0086,0.7881,-0.4306,1.0086,
+Ilam,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9951,0.7793,-0.4196,0.9951,
+Ilam,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,91.3787,52.6953,-24.1893,66.5928,-17.6281
+Ilam,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),77.5873,46.7616,-30.1864,56.5422,-21.9985
+Ilam,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),68.2188,41.7537,-9.6031,49.7148,-6.9983
+Ilam,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),68.1266,43.1103,-8.6567,49.6476,-6.3086
+Ilam,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),67.6668,42.7839,-8.4779,49.3126,-6.1784
+Jhapa,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.1488,0.8463,-0.1415,1.1488,
+Jhapa,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9798,0.7633,-0.3552,0.9798,
+Jhapa,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9739,0.7595,-0.3608,0.9739,
+Jhapa,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0366,0.8125,-0.4924,1.0366,
+Jhapa,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0247,0.8045,-0.4825,1.0247,
+Jhapa,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,82.4242,49.6733,-13.9827,68.1702,-11.5646
+Jhapa,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),66.2499,40.7796,-20.3175,54.793,-16.8039
+Jhapa,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),62.258,40.3444,0.124,51.4915,0.1026
+Jhapa,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),62.1534,40.511,1.1533,51.405,0.9539
+Jhapa,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),61.8268,40.3097,1.2682,51.1349,1.0489
+Jumla,Hills,Temp_mean,Seasonal-naive,Last training year,1.319,0.9833,-0.3479,1.319,
+Jumla,Hills,Temp_mean,Climatology,Full history (1981-2014),1.142,0.8544,-0.1898,1.142,
+Jumla,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.1385,0.8512,-0.1863,1.1385,
+Jumla,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.1622,0.8831,-0.354,1.1622,
+Jumla,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.1628,0.8817,-0.361,1.1628,
+Jumla,Hills,Precip_total,Seasonal-naive,Last training year,47.2456,36.2358,-2.1625,61.7294,-2.8254
+Jumla,Hills,Precip_total,Climatology,Full history (1981-2014),52.024,32.4023,-19.8768,67.9727,-25.9703
+Jumla,Hills,Precip_total,SARIMA,Full history (1981-2014),50.8242,39.3518,13.033,66.405,17.0285
+Jumla,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),47.245,35.1918,8.7195,61.7286,11.3925
+Jumla,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),48.9396,35.9998,11.0852,63.9427,14.4836
+Kabhre,Hills,Temp_mean,Seasonal-naive,Last training year,0.9478,0.7048,-0.2416,0.9478,
+Kabhre,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8458,0.6292,-0.1208,0.8458,
+Kabhre,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.844,0.6306,-0.1131,0.844,
+Kabhre,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.859,0.6806,-0.2438,0.859,
+Kabhre,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8582,0.6819,-0.2342,0.8582,
+Kabhre,Hills,Precip_total,Seasonal-naive,Last training year,51.4482,34.8858,16.2398,62.688,19.7877
+Kabhre,Hills,Precip_total,Climatology,Full history (1981-2014),49.7991,32.0294,-22.5774,60.6786,-27.5099
+Kabhre,Hills,Precip_total,SARIMA,Full history (1981-2014),44.7635,31.0593,6.6552,54.5429,8.1091
+Kabhre,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),40.2465,28.1596,2.3025,49.0392,2.8055
+Kabhre,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),43.5586,30.1754,5.1458,53.0748,6.27
+Kailali,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.4709,1.1442,-0.2005,1.4709,
+Kailali,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.147,0.9269,-0.1603,1.147,
+Kailali,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.1453,0.9251,-0.1594,1.1453,
+Kailali,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.1661,0.9233,-0.4573,1.1661,
+Kailali,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.1636,0.9221,-0.4521,1.1636,
+Kailali,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,59.7188,41.7845,-2.7672,61.2974,-2.8403
+Kailali,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),69.8787,42.4831,-18.3852,71.7258,-18.8712
+Kailali,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),66.0287,47.7292,18.9987,67.7741,19.5009
+Kailali,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),62.0297,44.4009,13.0346,63.6694,13.3791
+Kailali,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),64.0515,44.7636,16.1365,65.7447,16.5631
+Kanchanpur,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.4569,1.1095,-0.0806,1.4569,
+Kanchanpur,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.1366,0.8854,-0.2359,1.1366,
+Kanchanpur,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.135,0.8864,-0.2273,1.135,
+Kanchanpur,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.1227,0.8818,-0.3704,1.1227,
+Kanchanpur,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.118,0.8803,-0.3531,1.118,
+Kanchanpur,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,67.0326,46.5057,-4.197,73.4856,-4.601
+Kanchanpur,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),50.8904,32.5501,-12.6318,55.7895,-13.8478
+Kanchanpur,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),60.7474,43.0465,20.4276,66.5954,22.3941
+Kanchanpur,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),58.007,41.0442,16.701,63.5912,18.3087
+Kanchanpur,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),61.9198,42.7606,19.465,67.8807,21.3388
+Kaski,Hills,Temp_mean,Seasonal-naive,Last training year,1.0408,0.814,-0.0467,1.0408,
+Kaski,Hills,Temp_mean,Climatology,Full history (1981-2014),1.0233,0.8411,0.1885,1.0233,
+Kaski,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.0239,0.8417,0.1952,1.0239,
+Kaski,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9781,0.7742,0.0404,0.9781,
+Kaski,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9789,0.7745,0.0451,0.9789,
+Kaski,Hills,Precip_total,Seasonal-naive,Last training year,78.4848,56.8032,-3.5695,52.6072,-2.3926
+Kaski,Hills,Precip_total,Climatology,Full history (1981-2014),125.5158,87.3739,-82.1376,84.1313,-55.0556
+Kaski,Hills,Precip_total,SARIMA,Full history (1981-2014),77.5648,57.9195,-26.8923,51.9905,-18.0255
+Kaski,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),85.9109,60.8092,-45.7877,57.5848,-30.6908
+Kaski,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),78.3877,60.2397,-11.1101,52.5421,-7.4469
+Kathmandu,Hills,Temp_mean,Seasonal-naive,Last training year,1.0058,0.7175,-0.2604,1.0058,
+Kathmandu,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8725,0.6442,-0.0108,0.8725,
+Kathmandu,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8704,0.644,-0.008,0.8704,
+Kathmandu,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8936,0.6965,-0.2678,0.8936,
+Kathmandu,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8924,0.6966,-0.2628,0.8924,
+Kathmandu,Hills,Precip_total,Seasonal-naive,Last training year,57.2393,40.2728,13.9222,57.094,13.8868
+Kathmandu,Hills,Precip_total,Climatology,Full history (1981-2014),64.3464,42.3125,-33.7841,64.1831,-33.6983
+Kathmandu,Hills,Precip_total,SARIMA,Full history (1981-2014),52.1358,37.0584,1.1489,52.0035,1.146
+Kathmandu,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),48.0013,33.9255,-4.3313,47.8795,-4.3203
+Kathmandu,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),50.5096,35.8755,-1.5445,50.3813,-1.5406
+Lalitpur,Hills,Temp_mean,Seasonal-naive,Last training year,1.0058,0.7175,-0.2604,1.0058,
+Lalitpur,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8725,0.6442,-0.0108,0.8725,
+Lalitpur,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8704,0.644,-0.008,0.8704,
+Lalitpur,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8936,0.6965,-0.2678,0.8936,
+Lalitpur,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8924,0.6966,-0.2628,0.8924,
+Lalitpur,Hills,Precip_total,Seasonal-naive,Last training year,57.2393,40.2728,13.9222,57.094,13.8868
+Lalitpur,Hills,Precip_total,Climatology,Full history (1981-2014),64.3464,42.3125,-33.7841,64.1831,-33.6983
+Lalitpur,Hills,Precip_total,SARIMA,Full history (1981-2014),52.1358,37.0584,1.1489,52.0035,1.146
+Lalitpur,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),48.0013,33.9255,-4.3313,47.8795,-4.3203
+Lalitpur,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),50.5096,35.8755,-1.5445,50.3813,-1.5406
+Lamjung,Hills,Temp_mean,Seasonal-naive,Last training year,1.037,0.8173,-0.0288,1.037,
+Lamjung,Hills,Temp_mean,Climatology,Full history (1981-2014),1.0271,0.847,0.1944,1.0271,
+Lamjung,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.0279,0.8478,0.2012,1.0279,
+Lamjung,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9831,0.7804,0.058,0.9831,
+Lamjung,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.984,0.7807,0.063,0.984,
+Lamjung,Hills,Precip_total,Seasonal-naive,Last training year,74.8944,55.3482,-11.0145,51.0095,-7.5018
+Lamjung,Hills,Precip_total,Climatology,Full history (1981-2014),126.2328,88.5132,-83.5933,85.9753,-56.9342
+Lamjung,Hills,Precip_total,SARIMA,Full history (1981-2014),80.0019,58.6349,-33.3839,54.4881,-22.7373
+Lamjung,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),89.1941,62.9017,-49.9734,60.7488,-34.0361
+Lamjung,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),77.9006,59.6314,-15.9682,53.0569,-10.8757
+Mahottari,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.5524,1.2224,-0.7883,1.5524,
+Mahottari,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.0142,0.8006,-0.3296,1.0142,
+Mahottari,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.1222,0.9143,-0.5412,1.1222,
+Mahottari,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.2243,1.0201,-0.7325,1.2243,
+Mahottari,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.2391,1.0331,-0.7546,1.2391,
+Mahottari,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,63.716,40.3618,13.6428,70.7657,15.1523
+Mahottari,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),52.0669,32.2076,-8.4128,57.8277,-9.3436
+Mahottari,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),52.7983,34.7589,4.6591,58.64,5.1746
+Mahottari,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),54.8475,36.8253,11.8128,60.9159,13.1198
+Mahottari,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),55.2688,36.8596,11.3214,61.3839,12.574
+Makwanpur,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.3139,1.0042,-0.5893,1.3139,
+Makwanpur,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9259,0.7124,-0.1331,0.9259,
+Makwanpur,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.0013,0.8078,-0.3702,1.0013,
+Makwanpur,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.092,0.9042,-0.5765,1.092,
+Makwanpur,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.099,0.9113,-0.5887,1.099,
+Makwanpur,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,64.2049,43.485,14.8603,64.2705,14.8755
+Makwanpur,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),60.0567,35.6062,-21.657,60.118,-21.6791
+Makwanpur,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),57.8271,39.014,6.3909,57.8861,6.3974
+Makwanpur,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),54.4993,37.6574,6.5106,54.5549,6.5172
+Makwanpur,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),55.3042,38.1221,6.9511,55.3606,6.9582
+Manang,High mountains,Temp_mean,Seasonal-naive,Last training year,1.3904,1.0126,-0.0813,1.3904,
+Manang,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.4269,1.0995,0.2565,1.4269,
+Manang,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.4214,1.0967,0.2586,1.4214,
+Manang,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.4185,1.0856,0.2285,1.4185,
+Manang,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.4108,1.0818,0.2258,1.4108,
+Manang,High mountains,Precip_total,Seasonal-naive,Last training year,64.9748,47.7075,-9.1485,53.2467,-7.4972
+Manang,High mountains,Precip_total,Climatology,Full history (1981-2014),107.9468,77.9735,-73.9467,88.4621,-60.5991
+Manang,High mountains,Precip_total,SARIMA,Full history (1981-2014),68.5668,51.1358,-30.678,56.1903,-25.1405
+Manang,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),78.6867,56.5005,-47.2574,64.4836,-38.7274
+Manang,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),65.4228,50.0169,-12.9558,53.6139,-10.6172
+Morang,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.1985,0.875,-0.205,1.1985,
+Morang,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9272,0.711,-0.2419,0.9272,
+Morang,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9437,0.7317,-0.2998,0.9437,
+Morang,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0301,0.8304,-0.4865,1.0301,
+Morang,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0228,0.8258,-0.4803,1.0228,
+Morang,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,73.13,45.2135,-12.2955,70.2793,-11.8162
+Morang,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),60.9,36.427,-20.4711,58.526,-19.6731
+Morang,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),57.4011,37.1044,-0.3367,55.1635,-0.3236
+Morang,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),55.7177,36.6187,0.0853,53.5457,0.082
+Morang,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),56.1681,36.8862,0.3201,53.9785,0.3076
+Mugu,High mountains,Temp_mean,Seasonal-naive,Last training year,1.6668,1.1855,-0.686,1.6668,
+Mugu,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.433,1.0483,-0.263,1.433,
+Mugu,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.4186,1.039,-0.2729,1.4186,
+Mugu,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.4526,1.0884,-0.3737,1.4526,
+Mugu,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.4688,1.0944,-0.4398,1.4688,
+Mugu,High mountains,Precip_total,Seasonal-naive,Last training year,36.2751,28.63,-2.0623,67.6555,-3.8464
+Mugu,High mountains,Precip_total,Climatology,Full history (1981-2014),35.8904,23.7623,-16.7011,66.9381,-31.1486
+Mugu,High mountains,Precip_total,SARIMA,Full history (1981-2014),35.9127,28.7049,5.9849,66.9797,11.1623
+Mugu,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),34.1774,25.7443,3.5848,63.7432,6.6859
+Mugu,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),35.2543,26.6522,5.0613,65.7517,9.4396
+Mustang,High mountains,Temp_mean,Seasonal-naive,Last training year,1.3722,0.9908,-0.2147,1.3722,
+Mustang,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.3772,1.0661,0.1983,1.3772,
+Mustang,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.3696,1.0617,0.1994,1.3696,
+Mustang,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.3534,1.0381,0.1289,1.3534,
+Mustang,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.3434,1.0324,0.124,1.3434,
+Mustang,High mountains,Precip_total,Seasonal-naive,Last training year,73.3303,53.647,4.3313,55.516,3.2791
+Mustang,High mountains,Precip_total,Climatology,Full history (1981-2014),111.552,79.3345,-74.5567,84.4524,-56.4444
+Mustang,High mountains,Precip_total,SARIMA,Full history (1981-2014),65.2281,50.2773,-18.1136,49.382,-13.7132
+Mustang,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),73.8242,53.5513,-40.2305,55.8899,-30.4572
+Mustang,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),68.363,53.1363,-2.9365,51.7554,-2.2231
+Myagdi,Hills,Temp_mean,Seasonal-naive,Last training year,1.0552,0.8163,-0.0832,1.0552,
+Myagdi,Hills,Temp_mean,Climatology,Full history (1981-2014),1.0199,0.8304,0.1765,1.0199,
+Myagdi,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.0204,0.8309,0.1829,1.0204,
+Myagdi,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9739,0.7633,0.0049,0.9739,
+Myagdi,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9744,0.7636,0.0091,0.9744,
+Myagdi,Hills,Precip_total,Seasonal-naive,Last training year,90.8493,62.8872,11.2995,59.02,7.3407
+Myagdi,Hills,Precip_total,Climatology,Full history (1981-2014),124.7848,85.1071,-79.2351,81.0661,-51.4749
+Myagdi,Hills,Precip_total,SARIMA,Full history (1981-2014),76.6358,57.7876,-14.2253,49.7862,-9.2414
+Myagdi,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),80.9143,57.4942,-37.4264,52.5658,-24.314
+Myagdi,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),76.486,56.4312,-25.0828,49.6889,-16.295
+Nawalparasi,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.1972,0.9061,-0.3064,1.1972,
+Nawalparasi,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9896,0.7494,0.1883,0.9896,
+Nawalparasi,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.96,0.7347,-0.0242,0.96,
+Nawalparasi,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9829,0.7719,-0.2455,0.9829,
+Nawalparasi,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9853,0.777,-0.2564,0.9853,
+Nawalparasi,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,80.5123,55.669,4.648,56.405,3.2563
+Nawalparasi,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),105.9181,70.4575,-62.4952,74.2038,-43.7827
+Nawalparasi,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),73.6362,53.3275,-11.8335,51.5878,-8.2903
+Nawalparasi,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),70.9075,49.4614,-24.1222,49.6762,-16.8995
+Nawalparasi,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),71.1375,50.9265,-19.6021,49.8373,-13.7328
+Nuwakot,Hills,Temp_mean,Seasonal-naive,Last training year,1.0058,0.7175,-0.2604,1.0058,
+Nuwakot,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8725,0.6442,-0.0108,0.8725,
+Nuwakot,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8704,0.644,-0.008,0.8704,
+Nuwakot,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8936,0.6965,-0.2678,0.8936,
+Nuwakot,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8924,0.6966,-0.2628,0.8924,
+Nuwakot,Hills,Precip_total,Seasonal-naive,Last training year,57.2393,40.2728,13.9222,57.094,13.8868
+Nuwakot,Hills,Precip_total,Climatology,Full history (1981-2014),64.3464,42.3125,-33.7841,64.1831,-33.6983
+Nuwakot,Hills,Precip_total,SARIMA,Full history (1981-2014),52.1358,37.0584,1.1489,52.0035,1.146
+Nuwakot,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),48.0013,33.9255,-4.3313,47.8795,-4.3203
+Nuwakot,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),50.5096,35.8755,-1.5445,50.3813,-1.5406
+Okhaldhunga,Hills,Temp_mean,Seasonal-naive,Last training year,0.9509,0.7381,-0.0194,0.9509,
+Okhaldhunga,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8054,0.6203,-0.0435,0.8054,
+Okhaldhunga,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8,0.6146,-0.0352,0.8,
+Okhaldhunga,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8031,0.6231,-0.1594,0.8031,
+Okhaldhunga,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.7963,0.6149,-0.1456,0.7963,
+Okhaldhunga,Hills,Precip_total,Seasonal-naive,Last training year,58.0931,36.824,-16.6157,63.1636,-18.0659
+Okhaldhunga,Hills,Precip_total,Climatology,Full history (1981-2014),61.8846,37.8702,-33.385,67.2862,-36.2989
+Okhaldhunga,Hills,Precip_total,SARIMA,Full history (1981-2014),47.9938,30.8539,-14.0862,52.1828,-15.3157
+Okhaldhunga,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),46.1913,29.2182,-15.2953,50.223,-16.6303
+Okhaldhunga,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),47.1875,30.245,-15.7493,51.3062,-17.1239
+Palpa,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.2144,0.9162,-0.3315,1.2144,
+Palpa,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9885,0.7423,0.1419,0.9885,
+Palpa,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9682,0.744,-0.0544,0.9682,
+Palpa,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0016,0.7917,-0.2794,1.0016,
+Palpa,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0041,0.7964,-0.2902,1.0041,
+Palpa,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,91.1281,60.0423,13.8717,63.6399,9.6874
+Palpa,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),104.0184,68.5737,-58.6503,72.6419,-40.9588
+Palpa,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),76.7347,54.634,-3.1718,53.5881,-2.2151
+Palpa,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),70.0064,48.9834,-17.587,48.8894,-12.282
+Palpa,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),71.4074,50.6403,-12.3293,49.8678,-8.6103
+Panchther,Hills,Temp_mean,Seasonal-naive,Last training year,0.8932,0.6977,-0.0006,0.8932,
+Panchther,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8874,0.687,-0.2906,0.8874,
+Panchther,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8765,0.677,-0.2784,0.8765,
+Panchther,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8331,0.6442,-0.2203,0.8331,
+Panchther,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8236,0.636,-0.2042,0.8236,
+Panchther,Hills,Precip_total,Seasonal-naive,Last training year,66.7378,40.2642,-21.8268,61.2966,-20.0473
+Panchther,Hills,Precip_total,Climatology,Full history (1981-2014),61.2621,38.2746,-30.9165,56.2673,-28.3958
+Panchther,Hills,Precip_total,SARIMA,Full history (1981-2014),49.0739,31.3111,-11.8596,45.0729,-10.8926
+Panchther,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),48.7605,31.6022,-14.6934,44.785,-13.4955
+Panchther,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),48.9237,31.7354,-14.4036,44.9349,-13.2293
+Parbat,Hills,Temp_mean,Seasonal-naive,Last training year,1.0552,0.8163,-0.0832,1.0552,
+Parbat,Hills,Temp_mean,Climatology,Full history (1981-2014),1.0199,0.8304,0.1765,1.0199,
+Parbat,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.0204,0.8309,0.1829,1.0204,
+Parbat,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9739,0.7633,0.0049,0.9739,
+Parbat,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9744,0.7636,0.0091,0.9744,
+Parbat,Hills,Precip_total,Seasonal-naive,Last training year,90.8493,62.8872,11.2995,59.02,7.3407
+Parbat,Hills,Precip_total,Climatology,Full history (1981-2014),124.7848,85.1071,-79.2351,81.0661,-51.4749
+Parbat,Hills,Precip_total,SARIMA,Full history (1981-2014),76.6358,57.7876,-14.2253,49.7862,-9.2414
+Parbat,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),80.9143,57.4942,-37.4264,52.5658,-24.314
+Parbat,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),76.486,56.4312,-25.0828,49.6889,-16.295
+Rasuwa,Hills,Temp_mean,Seasonal-naive,Last training year,1.0583,0.7848,-0.2416,1.0583,
+Rasuwa,Hills,Temp_mean,Climatology,Full history (1981-2014),0.9987,0.7459,-0.0835,0.9987,
+Rasuwa,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.9977,0.746,-0.0779,0.9977,
+Rasuwa,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9968,0.7297,-0.0965,0.9968,
+Rasuwa,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9958,0.7309,-0.0915,0.9958,
+Rasuwa,Hills,Precip_total,Seasonal-naive,Last training year,48.3035,33.2693,11.5287,54.6386,13.0407
+Rasuwa,Hills,Precip_total,Climatology,Full history (1981-2014),61.0222,43.0566,-37.19,69.0253,-42.0675
+Rasuwa,Hills,Precip_total,SARIMA,Full history (1981-2014),43.4836,31.9301,-4.6027,49.1866,-5.2063
+Rasuwa,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),42.0024,29.9318,-12.7003,47.511,-14.3659
+Rasuwa,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),43.0821,31.5807,-6.1222,48.7323,-6.9251
+Routahat,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.6752,1.2927,-0.9529,1.6752,
+Routahat,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.0506,0.8288,-0.3836,1.0506,
+Routahat,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.2116,0.989,-0.6699,1.2116,
+Routahat,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.3089,1.0975,-0.8323,1.3089,
+Routahat,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.3315,1.1194,-0.8693,1.3315,
+Routahat,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,67.9811,43.4567,19.3693,77.0355,21.9491
+Routahat,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),51.775,32.12,-3.4128,58.6709,-3.8673
+Routahat,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),54.5168,36.1185,7.8397,61.7779,8.8839
+Routahat,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),58.1707,40.0642,17.1433,65.9185,19.4267
+Routahat,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),59.2181,39.6071,16.6758,67.1053,18.8969
+Rukum,Hills,Temp_mean,Seasonal-naive,Last training year,1.1357,0.8487,-0.2599,1.1357,
+Rukum,Hills,Temp_mean,Climatology,Full history (1981-2014),1.0077,0.776,-0.1059,1.0077,
+Rukum,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.0058,0.7738,-0.1008,1.0058,
+Rukum,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0032,0.7554,-0.2268,1.0032,
+Rukum,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0026,0.7545,-0.2297,1.0026,
+Rukum,Hills,Precip_total,Seasonal-naive,Last training year,58.8804,43.7467,0.4703,56.354,0.4502
+Rukum,Hills,Precip_total,Climatology,Full history (1981-2014),76.3007,45.9525,-31.4535,73.0269,-30.1039
+Rukum,Hills,Precip_total,SARIMA,Full history (1981-2014),64.2335,47.6961,12.5748,61.4774,12.0352
+Rukum,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),58.5685,42.0238,3.6707,56.0555,3.5132
+Rukum,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),62.3223,44.726,9.2633,59.6483,8.8658
+Rupandehi,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.2199,0.921,-0.3328,1.2199,
+Rupandehi,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9815,0.7464,0.0998,0.9815,
+Rupandehi,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9661,0.7472,-0.0705,0.9661,
+Rupandehi,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0034,0.7996,-0.3053,1.0034,
+Rupandehi,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0057,0.8033,-0.3155,1.0057,
+Rupandehi,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,90.73,59.5337,12.927,65.379,9.315
+Rupandehi,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),99.9546,65.3286,-53.5348,72.0261,-38.5765
+Rupandehi,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),77.9094,54.2555,0.0425,56.1406,0.0306
+Rupandehi,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),68.8174,48.5446,-13.3373,49.589,-9.6107
+Rupandehi,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),71.0177,49.3675,-8.906,51.1745,-6.4175
+Salyan,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.2575,0.9443,-0.1956,1.2575,
+Salyan,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9846,0.7667,-0.0786,0.9846,
+Salyan,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9829,0.7659,-0.0764,0.9829,
+Salyan,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9765,0.7612,-0.3233,0.9765,
+Salyan,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9762,0.7607,-0.3235,0.9762,
+Salyan,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,74.1693,51.6867,-7.216,63.9252,-6.2193
+Salyan,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),95.6323,54.1986,-32.6245,82.4238,-28.1185
+Salyan,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),78.7214,55.5986,7.6057,67.8485,6.5552
+Salyan,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),74.7052,51.2717,-0.2185,64.3871,-0.1883
+Salyan,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),78.4468,54.1826,6.4583,67.6119,5.5663
+Sankhuwasabha,Hills,Temp_mean,Seasonal-naive,Last training year,0.9308,0.723,-0.0266,0.9308,
+Sankhuwasabha,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8398,0.6476,-0.1704,0.8398,
+Sankhuwasabha,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8313,0.6399,-0.1609,0.8313,
+Sankhuwasabha,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8221,0.6334,-0.2039,0.8221,
+Sankhuwasabha,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8127,0.6247,-0.1896,0.8127,
+Sankhuwasabha,Hills,Precip_total,Seasonal-naive,Last training year,60.2926,36.9738,-16.5912,63.7161,-17.5332
+Sankhuwasabha,Hills,Precip_total,Climatology,Full history (1981-2014),57.2819,34.7769,-28.3459,60.5344,-29.9554
+Sankhuwasabha,Hills,Precip_total,SARIMA,Full history (1981-2014),46.0041,29.2371,-10.6038,48.6162,-11.2058
+Sankhuwasabha,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),44.7525,29.0729,-11.2665,47.2935,-11.9062
+Sankhuwasabha,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),45.1816,29.4285,-11.1935,47.7471,-11.8291
+Saptari,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.2179,0.929,-0.2168,1.2179,
+Saptari,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.8839,0.6746,-0.0825,0.8839,
+Saptari,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9168,0.7171,-0.2174,0.9168,
+Saptari,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9775,0.7964,-0.4107,0.9775,
+Saptari,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9766,0.7957,-0.41,0.9766,
+Saptari,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,69.1438,43.0625,-17.7818,68.7963,-17.6925
+Saptari,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),66.0481,38.959,-29.6993,65.7161,-29.55
+Saptari,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),57.1813,35.5644,-12.4519,56.8939,-12.3893
+Saptari,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),54.3322,34.0303,-10.5515,54.0591,-10.4985
+Saptari,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),55.4151,34.5737,-10.6118,55.1365,-10.5584
+Sarlahi,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.3862,1.0761,-0.6924,1.3862,
+Sarlahi,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.946,0.7425,-0.2699,0.946,
+Sarlahi,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.027,0.8339,-0.4551,1.027,
+Sarlahi,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.1362,0.9486,-0.6606,1.1362,
+Sarlahi,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.1452,0.9577,-0.6761,1.1452,
+Sarlahi,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,63.0235,41.096,16.2047,69.543,17.8809
+Sarlahi,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),51.9255,31.7357,-11.7392,57.2969,-12.9535
+Sarlahi,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),54.2932,36.2412,8.8627,59.9095,9.7795
+Sarlahi,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),53.1098,36.0253,11.4215,58.6037,12.603
+Sarlahi,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),54.6784,36.7892,11.5249,60.3346,12.7171
+Sindhuli,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.1549,0.8692,-0.4318,1.1549,
+Sindhuli,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.8869,0.6873,-0.1562,0.8869,
+Sindhuli,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9026,0.7081,-0.2432,0.9026,
+Sindhuli,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9991,0.8085,-0.489,0.9991,
+Sindhuli,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.998,0.807,-0.4866,0.998,
+Sindhuli,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,59.5295,39.3433,13.0187,64.0024,13.9969
+Sindhuli,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),55.62,33.6894,-20.0694,59.7991,-21.5774
+Sindhuli,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),52.8283,35.6963,6.2435,56.7977,6.7126
+Sindhuli,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),49.9742,34.2875,5.695,53.7292,6.1229
+Sindhuli,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),51.5968,35.1483,6.1256,55.4737,6.5858
+Solukhumbu,High mountains,Temp_mean,Seasonal-naive,Last training year,1.2437,0.9816,-0.3678,1.2437,
+Solukhumbu,High mountains,Temp_mean,Climatology,Full history (1981-2014),1.1554,0.8835,-0.3799,1.1554,
+Solukhumbu,High mountains,Temp_mean,SARIMA,Full history (1981-2014),1.153,0.8847,-0.3663,1.153,
+Solukhumbu,High mountains,Temp_mean,Climatology,Post-2004 only (2004-2014),1.1108,0.8592,-0.2197,1.1108,
+Solukhumbu,High mountains,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.1108,0.8615,-0.2042,1.1108,
+Solukhumbu,High mountains,Precip_total,Seasonal-naive,Last training year,25.8855,17.2157,-5.1943,53.2202,-10.6795
+Solukhumbu,High mountains,Precip_total,Climatology,Full history (1981-2014),31.0653,18.6531,-15.3514,63.8699,-31.5623
+Solukhumbu,High mountains,Precip_total,SARIMA,Full history (1981-2014),25.7337,16.2033,-8.9072,52.9081,-18.3131
+Solukhumbu,High mountains,Precip_total,Climatology,Post-2004 only (2004-2014),24.1045,15.1916,-7.5818,49.5585,-15.5881
+Solukhumbu,High mountains,Precip_total,SARIMA,Post-2004 only (2004-2014),24.9011,15.8161,-7.997,51.1964,-16.4417
+Sunsari,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.1985,0.875,-0.205,1.1985,
+Sunsari,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.9272,0.711,-0.2419,0.9272,
+Sunsari,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9437,0.7317,-0.2998,0.9437,
+Sunsari,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0301,0.8304,-0.4865,1.0301,
+Sunsari,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0228,0.8258,-0.4803,1.0228,
+Sunsari,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,73.13,45.2135,-12.2955,70.2793,-11.8162
+Sunsari,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),60.9,36.427,-20.4711,58.526,-19.6731
+Sunsari,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),57.4011,37.1044,-0.3367,55.1635,-0.3236
+Sunsari,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),55.7177,36.6187,0.0853,53.5457,0.082
+Sunsari,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),56.1681,36.8862,0.3201,53.9785,0.3076
+Surkhet,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.3199,1.0099,-0.1719,1.3199,
+Surkhet,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),1.0517,0.8275,-0.1258,1.0517,
+Surkhet,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),1.0497,0.8264,-0.1204,1.0497,
+Surkhet,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),1.0644,0.8402,-0.377,1.0644,
+Surkhet,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),1.0636,0.8402,-0.3739,1.0636,
+Surkhet,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,60.376,44.4762,-4.8748,60.0668,-4.8499
+Surkhet,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),74.6509,44.1498,-25.5382,74.2685,-25.4074
+Surkhet,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),64.9019,47.7536,13.573,64.5694,13.5035
+Surkhet,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),60.6361,43.3894,6.8455,60.3255,6.8104
+Surkhet,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),63.1802,44.6348,11.2087,62.8566,11.1513
+Syangja,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.0886,0.8071,-0.2068,1.0886,
+Syangja,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.968,0.7683,0.1593,0.968,
+Syangja,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9525,0.7496,0.1244,0.9525,
+Syangja,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.943,0.7282,-0.1371,0.943,
+Syangja,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9426,0.7275,-0.1397,0.9426,
+Syangja,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,89.8729,60.8883,12.591,60.4961,8.4754
+Syangja,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),113.6903,76.2461,-68.9429,76.5283,-46.4075
+Syangja,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),75.6086,55.353,-8.9034,50.8944,-5.9931
+Syangja,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),73.8946,52.5147,-27.5067,49.7406,-18.5156
+Syangja,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),73.0471,53.4643,-19.2185,49.1701,-12.9365
+Tanahun,Hills,Temp_mean,Seasonal-naive,Last training year,1.037,0.8173,-0.0288,1.037,
+Tanahun,Hills,Temp_mean,Climatology,Full history (1981-2014),1.0271,0.847,0.1944,1.0271,
+Tanahun,Hills,Temp_mean,SARIMA,Full history (1981-2014),1.0279,0.8478,0.2012,1.0279,
+Tanahun,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9831,0.7804,0.058,0.9831,
+Tanahun,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.984,0.7807,0.063,0.984,
+Tanahun,Hills,Precip_total,Seasonal-naive,Last training year,74.8944,55.3482,-11.0145,51.0095,-7.5018
+Tanahun,Hills,Precip_total,Climatology,Full history (1981-2014),126.2328,88.5132,-83.5933,85.9753,-56.9342
+Tanahun,Hills,Precip_total,SARIMA,Full history (1981-2014),80.0019,58.6349,-33.3839,54.4881,-22.7373
+Tanahun,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),89.1941,62.9017,-49.9734,60.7488,-34.0361
+Tanahun,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),77.9006,59.6314,-15.9682,53.0569,-10.8757
+Taplejung,Hills,Temp_mean,Seasonal-naive,Last training year,0.8932,0.6977,-0.0006,0.8932,
+Taplejung,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8874,0.687,-0.2906,0.8874,
+Taplejung,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8765,0.677,-0.2784,0.8765,
+Taplejung,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8331,0.6442,-0.2203,0.8331,
+Taplejung,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8236,0.636,-0.2042,0.8236,
+Taplejung,Hills,Precip_total,Seasonal-naive,Last training year,66.7378,40.2642,-21.8268,61.2966,-20.0473
+Taplejung,Hills,Precip_total,Climatology,Full history (1981-2014),61.2621,38.2746,-30.9165,56.2673,-28.3958
+Taplejung,Hills,Precip_total,SARIMA,Full history (1981-2014),49.0739,31.3111,-11.8596,45.0729,-10.8926
+Taplejung,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),48.7605,31.6022,-14.6934,44.785,-13.4955
+Taplejung,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),48.9237,31.7354,-14.4036,44.9349,-13.2293
+Terhathum,Hills,Temp_mean,Seasonal-naive,Last training year,0.8932,0.6977,-0.0006,0.8932,
+Terhathum,Hills,Temp_mean,Climatology,Full history (1981-2014),0.8874,0.687,-0.2906,0.8874,
+Terhathum,Hills,Temp_mean,SARIMA,Full history (1981-2014),0.8765,0.677,-0.2784,0.8765,
+Terhathum,Hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.8331,0.6442,-0.2203,0.8331,
+Terhathum,Hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.8236,0.636,-0.2042,0.8236,
+Terhathum,Hills,Precip_total,Seasonal-naive,Last training year,66.7378,40.2642,-21.8268,61.2966,-20.0473
+Terhathum,Hills,Precip_total,Climatology,Full history (1981-2014),61.2621,38.2746,-30.9165,56.2673,-28.3958
+Terhathum,Hills,Precip_total,SARIMA,Full history (1981-2014),49.0739,31.3111,-11.8596,45.0729,-10.8926
+Terhathum,Hills,Precip_total,Climatology,Post-2004 only (2004-2014),48.7605,31.6022,-14.6934,44.785,-13.4955
+Terhathum,Hills,Precip_total,SARIMA,Post-2004 only (2004-2014),48.9237,31.7354,-14.4036,44.9349,-13.2293
+Udayapur,Lowlands & low hills,Temp_mean,Seasonal-naive,Last training year,1.2179,0.929,-0.2168,1.2179,
+Udayapur,Lowlands & low hills,Temp_mean,Climatology,Full history (1981-2014),0.8839,0.6746,-0.0825,0.8839,
+Udayapur,Lowlands & low hills,Temp_mean,SARIMA,Full history (1981-2014),0.9168,0.7171,-0.2174,0.9168,
+Udayapur,Lowlands & low hills,Temp_mean,Climatology,Post-2004 only (2004-2014),0.9775,0.7964,-0.4107,0.9775,
+Udayapur,Lowlands & low hills,Temp_mean,SARIMA,Post-2004 only (2004-2014),0.9766,0.7957,-0.41,0.9766,
+Udayapur,Lowlands & low hills,Precip_total,Seasonal-naive,Last training year,69.1438,43.0625,-17.7818,68.7963,-17.6925
+Udayapur,Lowlands & low hills,Precip_total,Climatology,Full history (1981-2014),66.0481,38.959,-29.6993,65.7161,-29.55
+Udayapur,Lowlands & low hills,Precip_total,SARIMA,Full history (1981-2014),57.1813,35.5644,-12.4519,56.8939,-12.3893
+Udayapur,Lowlands & low hills,Precip_total,Climatology,Post-2004 only (2004-2014),54.3322,34.0303,-10.5515,54.0591,-10.4985
+Udayapur,Lowlands & low hills,Precip_total,SARIMA,Post-2004 only (2004-2014),55.4151,34.5737,-10.6118,55.1365,-10.5584

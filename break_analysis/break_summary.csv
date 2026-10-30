@@ -1,0 +1,13 @@
+Variable,Label,Unit,Best_break_year,Variation_explained,Permutation_p,Average_before_2004,Average_from_2004,Shift_at_2004_in_SD,Change_at_2004_in_units,Change_at_2004_pct,Change,Breaks_near_2004,Break_month
+Precip,Rainfall,mm/day,2004,0.739,0.001,1.852,3.27,1.72,1.42,76.6,+77%,True,2004-04
+Humidity_2m,Specific humidity,g/kg,2004,0.733,0.001,7.989,9.212,1.72,1.22,15.3,+15%,True,2004-04
+RH_2m,Relative humidity,%,2004,0.72,0.001,51.627,61.452,1.7,9.83,19.0,+19%,True,2004-04
+TempRange_2m,Daily temperature range,C,2004,0.739,0.001,11.262,10.124,-1.73,-1.14,-10.1,-1.1 C,True,2004-04
+WindSpeed_10m,Wind speed at 10 m,m/s,2004,0.603,0.001,2.435,2.283,-1.56,-0.15,-6.2,-6%,True,2003-12
+WindSpeed_50m,Wind speed at 50 m,m/s,2001,0.438,0.001,2.784,2.654,-1.32,-0.13,-4.7,-5%,False,
+WetBulbTemp_2m,Wet-bulb temperature,C,2004,0.737,0.001,4.333,7.003,1.72,2.67,61.6,+2.7 C,True,2004-04
+MaxTemp_2m,Daily maximum temperature,C,2004,0.431,0.001,22.217,21.338,-1.32,-0.88,-4.0,-0.9 C,True,2004-05
+MinTemp_2m,Daily minimum temperature,C,1987,0.303,0.004,10.955,11.214,0.68,0.26,2.4,+0.3 C,False,
+EarthSkinTemp,Earth skin temperature,C,2004,0.23,0.028,15.735,15.259,-0.96,-0.48,-3.0,-0.5 C,False,
+Temp_2m,Mean temperature,C,1987,0.205,0.044,15.9,15.695,-0.53,-0.21,-1.3,-0.2 C,False,
+Pressure,Surface pressure,kPa,2014,0.189,0.067,82.885,82.913,0.69,0.03,0.0,+0%,False,

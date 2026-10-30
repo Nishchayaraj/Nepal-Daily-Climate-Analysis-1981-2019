@@ -1,0 +1,71 @@
+====================================================================
+BREAK ANALYSIS - was the 2004 rainfall jump real?
+====================================================================
+Loaded 883,128 daily records, 62 districts.
+
+Background (documentation checked online):
+  - The Kaggle page says the data come from NASA's POWER project, extracted for 93
+    weather-station locations in 62 districts. That is MODELLED data, not station
+    measurements, so changes in the underlying product can create artificial jumps.
+  - An Open Data Nepal listing with the same date range and the same total row count
+    (2 x 441,564 = 883,128) carries a note that precipitation is reported differently
+    before and after January 2018. That is not 2004, so it does not explain this jump.
+  - No documentation found for a change in 2004. The cause is UNVERIFIED.
+
+CHECK 1 - Which variables show a step? (national yearly averages, 1981-2019)
+(Shift and Change compare 2004-2019 with 1981-2003)
+                    Label  Break_year  Explained  Permutation_p  Shift_SD Change Break_month
+                 Rainfall        2004      0.739          0.001      1.72   +77%     2004-04
+        Specific humidity        2004      0.733          0.001      1.72   +15%     2004-04
+        Relative humidity        2004      0.720          0.001      1.70   +19%     2004-04
+  Daily temperature range        2004      0.739          0.001     -1.73 -1.1 C     2004-04
+       Wind speed at 10 m        2004      0.603          0.001     -1.56    -6%     2003-12
+       Wind speed at 50 m        2001      0.438          0.001     -1.32    -5%            
+     Wet-bulb temperature        2004      0.737          0.001      1.72 +2.7 C     2004-04
+Daily maximum temperature        2004      0.431          0.001     -1.32 -0.9 C     2004-05
+Daily minimum temperature        1987      0.303          0.004      0.68 +0.3 C            
+   Earth skin temperature        2004      0.230          0.028     -0.96 -0.5 C            
+         Mean temperature        1987      0.205          0.044     -0.53 -0.2 C            
+         Surface pressure        2014      0.189          0.067      0.69    +0%            
+
+Break near 2004 (best year 2003-2005 and explains >= 40%): Rainfall, Specific humidity, Relative humidity, Daily temperature range, Wind speed at 10 m, Wet-bulb temperature, Daily maximum temperature
+No clear break near 2004: Wind speed at 50 m, Daily minimum temperature, Earth skin temperature, Mean temperature, Surface pressure
+
+CHECK 2 - Timing (monthly, seasonal cycle removed):
+                    Label Break_month
+                 Rainfall     2004-04
+        Specific humidity     2004-04
+        Relative humidity     2004-04
+  Daily temperature range     2004-04
+       Wind speed at 10 m     2003-12
+     Wet-bulb temperature     2004-04
+Daily maximum temperature     2004-05
+
+CHECK 3 - Spread across districts: best break year of annual rainfall is 2004 in 47 of 62 districts, and within 2003-2005 in 55.
+
+CHECK 4 - Is the physics consistent? (1981-2003 vs 2005-2019)
+                  1981-2003  2005-2019
+corr_rain_RH           0.42       0.43
+monsoon_rain           4.49       7.87
+monsoon_RH            73.70      80.62
+monsoon_humidity      14.06      15.06
+  The rain-humidity correlation is similar in both periods, but the LEVELS of rainfall
+  and humidity both stepped up. Real climate shifts and product changes can both do this,
+  so this check cannot settle the question.
+
+WHAT THE EVIDENCE SUPPORTS
+  - The jump is abrupt (within months), nearly simultaneous in almost every district,
+    and appears in several moisture-related variables together, while mean temperature
+    and pressure show no matching step.
+  - That pattern is typical of a change in how a modelled dataset was produced, and it
+    is difficult to attribute to natural climate variability. It is NOT proof: independent station
+    records (e.g. from Nepal's Department of Hydrology and Meteorology) would be needed.
+  - Suggested wording: 'The data contain an abrupt, nationwide step change in rainfall
+    and humidity in early 2004, most likely a data-product artifact.'
+
+Note: p-values come from a permutation test that treats years as independent, so they
+are approximate. The size of the step in SD is the more useful number.
+
+Saving figures and tables:
+  saved 14_variables_around_2004.png
+  saved 15_break_timing.png

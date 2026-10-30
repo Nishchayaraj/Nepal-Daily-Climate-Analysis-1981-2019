@@ -1,0 +1,13 @@
+Yardstick,Zone_definition,Variable,Kruskal_H,p_value,Effect_size_eps2,Easiest_to_hardest
+main,Baseline zones (Step 4),Temperature,26.61,0.0,0.436,Hills < Lowlands & low hills < High mountains
+main,Temperature + altitude zones,Temperature,21.73,2e-05,0.356,Hills < Lowlands & low hills < High mountains
+main,Stable core (baseline zones),Temperature,24.8,0.0,0.496,Hills < Lowlands & low hills < High mountains
+main,Baseline zones (Step 4),Rainfall,18.14,0.00012,0.297,Hills < Lowlands & low hills < High mountains
+main,Temperature + altitude zones,Rainfall,13.35,0.00126,0.219,Hills < High mountains < Lowlands & low hills
+main,Stable core (baseline zones),Rainfall,19.26,7e-05,0.385,Hills < High mountains < Lowlands & low hills
+relative to variability,Baseline zones (Step 4),Temperature,8.91,0.0116,0.146,Hills < Lowlands & low hills < High mountains
+relative to variability,Temperature + altitude zones,Temperature,4.6,0.10037,0.075,Lowlands & low hills < Hills < High mountains
+relative to variability,Stable core (baseline zones),Temperature,6.15,0.04607,0.123,Hills < Lowlands & low hills < High mountains
+relative to variability,Baseline zones (Step 4),Rainfall,11.86,0.00266,0.194,Hills < Lowlands & low hills < High mountains
+relative to variability,Temperature + altitude zones,Rainfall,6.81,0.03321,0.112,Hills < Lowlands & low hills < High mountains
+relative to variability,Stable core (baseline zones),Rainfall,8.42,0.01483,0.168,Hills < Lowlands & low hills < High mountains

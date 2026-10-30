@@ -1,0 +1,73 @@
+======================================================================
+ZONE FORECASTING REPORT - all districts, with and without the 2004 break
+======================================================================
+Districts: 62   Zones: Lowlands & low hills, Hills, High mountains
+Training: full history 1981-2014 (main) and 2004-2014 only (comparison)
+Testing : 2015-01 to 2019-12 (60 months), forecast all at once
+Representative districts from Step 5: Nawalparasi, Lamjung, Dolpa
+
+Fitting models for 62 districts (about 2-5 minutes) ...
+  10/62 districts done
+  20/62 districts done
+  30/62 districts done
+  40/62 districts done
+  50/62 districts done
+  60/62 districts done
+  62/62 districts done
+
+======================================================================
+Q1. DOES FORECASTING DIFFICULTY DIFFER BETWEEN ZONES?
+======================================================================
+
+--- TEMPERATURE: median error per zone (RMSE (C)) ---
+Column                Climatology | Full  Climatology | Post-2004  SARIMA | Full  SARIMA | Post-2004  Seasonal-naive
+Zone                                                                                                                
+Lowlands & low hills                0.98                     1.02           0.97                1.02            1.22
+Hills                               0.89                     0.89           0.88                0.89            1.01
+High mountains                      1.36                     1.35           1.35                1.35            1.44
+Kruskal-Wallis test (SARIMA, full history) across zones: p < 0.001  (zones differ; zones were built from climate features, so treat this as descriptive)
+
+--- RAINFALL: median error per zone (RMSE (% of average monthly rainfall)) ---
+Column                Climatology | Full  Climatology | Post-2004  SARIMA | Full  SARIMA | Post-2004  Seasonal-naive
+Zone                                                                                                                
+Lowlands & low hills               65.72                    54.55          57.89               55.47           64.98
+Hills                              66.28                    49.04          52.00               50.38           59.02
+High mountains                     68.11                    64.48          66.98               65.75           67.66
+Kruskal-Wallis test (SARIMA, full history) across zones: p < 0.001  (zones differ; zones were built from climate features, so treat this as descriptive)
+
+======================================================================
+Q2. WERE THE THREE REPRESENTATIVE DISTRICTS TYPICAL?
+======================================================================
+Position of each representative within its zone (SARIMA, full history).
+'Percentile' = share of districts in the same zone with a SMALLER error (50% = typical).
+  Nawalparasi  Temperature  error   0.96   zone median   0.97   percentile  32%   (Lowlands & low hills)
+  Nawalparasi  Rainfall     error  51.59   zone median  57.89   percentile  11%   (Lowlands & low hills)
+  Lamjung      Temperature  error   1.03   zone median   0.88   percentile  87%   (Hills)
+  Lamjung      Rainfall     error  54.49   zone median  52.00   percentile  74%   (Hills)
+  Dolpa        Temperature  error   1.35   zone median   1.35   percentile  50%   (High mountains)
+  Dolpa        Rainfall     error  56.90   zone median  66.98   percentile  38%   (High mountains)
+
+======================================================================
+Q3. WHAT DOES THE 2004 BREAK COST? (full history vs 2004-2014 only)
+======================================================================
+   Variable       Model  Districts  Post2004_better_in  Median_error_full  Median_error_post2004  Median_change_pct  Median_bias_full_pct  Median_bias_post2004_pct
+Temperature Climatology         62                  30                1.0                    1.0                0.3                   NaN                       NaN
+Temperature      SARIMA         62                  27                1.0                    1.0                0.9                   NaN                       NaN
+   Rainfall Climatology         62                  54               66.7                   53.9              -21.9                 -29.7                      -4.3
+   Rainfall      SARIMA         62                  54               55.2                   53.3               -2.1                   1.1                      -1.4
+Bias columns: forecast minus actual as % of average monthly rainfall (negative = too low).
+
+For reference, the seasonal-naive baseline's median rainfall error is 62.6%.
+
+======================================================================
+Q4. DOES SARIMA BEAT THE SIMPLE BASELINES? (full-history training, all districts)
+======================================================================
+Temperature: median error  seasonal-naive 1.20 | climatology 0.99 | SARIMA 1.00
+   SARIMA beats climatology in 44 of 62 districts, and seasonal-naive in 61 of 62.
+Rainfall: median error  seasonal-naive 62.58 | climatology 66.72 | SARIMA 55.16
+   SARIMA beats climatology in 51 of 62 districts, and seasonal-naive in 46 of 62.
+
+Saving figures and tables:
+  saved 17_errors_by_zone.png
+  saved 18_full_vs_post2004.png
+  saved 19_error_maps.png

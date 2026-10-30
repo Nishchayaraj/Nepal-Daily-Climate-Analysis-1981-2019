@@ -1,0 +1,59 @@
+Variable,Horizon,Window,Model,Districts,Median_error,Median_MASE,Median_bias_pct
+Rainfall,1 month ahead,2005-2009,Average of SARIMA and gradient boosting,62,65.281,1.3298,-15.2512
+Rainfall,1 month ahead,2005-2009,Climatology,62,80.5311,1.4666,-40.8457
+Rainfall,1 month ahead,2005-2009,Gradient boosting (+ predictors),62,66.7885,1.4276,-10.1902
+Rainfall,1 month ahead,2005-2009,Gradient boosting (own history),62,71.4913,1.3726,-28.1531
+Rainfall,1 month ahead,2005-2009,SARIMA,62,68.291,1.2976,-20.2976
+Rainfall,1 month ahead,2005-2009,Seasonal-naive,62,80.0742,1.4048,2.438
+Rainfall,1 month ahead,2010-2014,Average of SARIMA and gradient boosting,62,58.1738,1.1695,-5.9629
+Rainfall,1 month ahead,2010-2014,Climatology,62,81.1078,1.4134,-38.0802
+Rainfall,1 month ahead,2010-2014,Gradient boosting (+ predictors),62,67.2199,1.3839,-7.5993
+Rainfall,1 month ahead,2010-2014,Gradient boosting (own history),62,61.3053,1.1714,-16.7711
+Rainfall,1 month ahead,2010-2014,SARIMA,62,56.5002,1.0986,-6.8972
+Rainfall,1 month ahead,2010-2014,Seasonal-naive,62,73.1502,1.3922,-4.7915
+Rainfall,1 month ahead,2015-2019,Average of SARIMA and gradient boosting,62,54.4419,1.1191,1.6829
+Rainfall,1 month ahead,2015-2019,Climatology,62,66.7236,1.1166,-29.7331
+Rainfall,1 month ahead,2015-2019,Gradient boosting (+ predictors),62,56.8163,1.1919,2.8115
+Rainfall,1 month ahead,2015-2019,Gradient boosting (own history),62,57.4994,1.1218,-3.9875
+Rainfall,1 month ahead,2015-2019,SARIMA,62,56.5864,1.098,0.7176
+Rainfall,1 month ahead,2015-2019,Seasonal-naive,62,73.3331,1.3381,-1.5917
+Rainfall,Long-range (60 months at once),2005-2009,Climatology,62,80.5311,1.4666,-40.8457
+Rainfall,Long-range (60 months at once),2005-2009,SARIMA,62,83.1647,1.5176,-43.6615
+Rainfall,Long-range (60 months at once),2005-2009,SARIMA + 2004 step,62,69.3147,1.6517,-3.4572
+Rainfall,Long-range (60 months at once),2005-2009,Seasonal-naive,62,70.3418,1.4097,-3.2921
+Rainfall,Long-range (60 months at once),2010-2014,Climatology,62,81.1078,1.4134,-38.0802
+Rainfall,Long-range (60 months at once),2010-2014,SARIMA,62,58.2483,1.0398,-12.9349
+Rainfall,Long-range (60 months at once),2010-2014,SARIMA + 2004 step,62,57.7488,1.1025,-8.1646
+Rainfall,Long-range (60 months at once),2010-2014,Seasonal-naive,62,75.5186,1.3628,-22.8271
+Rainfall,Long-range (60 months at once),2015-2019,Climatology,62,66.7236,1.1166,-29.7331
+Rainfall,Long-range (60 months at once),2015-2019,SARIMA,62,55.1635,1.1149,1.146
+Rainfall,Long-range (60 months at once),2015-2019,SARIMA + 2004 step,62,55.0285,1.1038,0.9331
+Rainfall,Long-range (60 months at once),2015-2019,SARIMA on log scale,62,63.2807,1.0915,-30.9824
+Rainfall,Long-range (60 months at once),2015-2019,Seasonal-naive,62,62.5836,1.1903,-1.5521
+Temperature,1 month ahead,2005-2009,Average of SARIMA and gradient boosting,62,0.9008,0.7006,
+Temperature,1 month ahead,2005-2009,Climatology,62,1.0474,0.8174,
+Temperature,1 month ahead,2005-2009,Gradient boosting (+ predictors),62,0.9442,0.7389,
+Temperature,1 month ahead,2005-2009,Gradient boosting (own history),62,0.9781,0.7459,
+Temperature,1 month ahead,2005-2009,SARIMA,62,0.9382,0.7499,
+Temperature,1 month ahead,2005-2009,Seasonal-naive,62,1.3605,1.0421,
+Temperature,1 month ahead,2010-2014,Average of SARIMA and gradient boosting,62,0.8249,0.6186,
+Temperature,1 month ahead,2010-2014,Climatology,62,0.9304,0.683,
+Temperature,1 month ahead,2010-2014,Gradient boosting (+ predictors),62,0.8417,0.6536,
+Temperature,1 month ahead,2010-2014,Gradient boosting (own history),62,0.915,0.6606,
+Temperature,1 month ahead,2010-2014,SARIMA,62,0.841,0.6265,
+Temperature,1 month ahead,2010-2014,Seasonal-naive,62,1.2166,0.973,
+Temperature,1 month ahead,2015-2019,Average of SARIMA and gradient boosting,62,0.9161,0.7586,
+Temperature,1 month ahead,2015-2019,Climatology,62,0.9891,0.795,
+Temperature,1 month ahead,2015-2019,Gradient boosting (+ predictors),62,0.9591,0.7826,
+Temperature,1 month ahead,2015-2019,Gradient boosting (own history),62,0.9171,0.7655,
+Temperature,1 month ahead,2015-2019,SARIMA,62,0.9309,0.7662,
+Temperature,1 month ahead,2015-2019,Seasonal-naive,62,1.2452,0.954,
+Temperature,Long-range (60 months at once),2005-2009,Climatology,62,1.0474,0.8174,
+Temperature,Long-range (60 months at once),2005-2009,SARIMA,62,1.0469,0.8337,
+Temperature,Long-range (60 months at once),2005-2009,Seasonal-naive,62,1.2907,1.0064,
+Temperature,Long-range (60 months at once),2010-2014,Climatology,62,0.9304,0.683,
+Temperature,Long-range (60 months at once),2010-2014,SARIMA,62,0.9459,0.6981,
+Temperature,Long-range (60 months at once),2010-2014,Seasonal-naive,62,1.3648,1.0814,
+Temperature,Long-range (60 months at once),2015-2019,Climatology,62,0.9891,0.795,
+Temperature,Long-range (60 months at once),2015-2019,SARIMA,62,0.9995,0.8211,
+Temperature,Long-range (60 months at once),2015-2019,Seasonal-naive,62,1.1985,0.9266,

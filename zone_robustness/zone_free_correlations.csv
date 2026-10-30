@@ -1,0 +1,9 @@
+Variable,Predictor,Spearman_rho,p_value
+Temperature,Pressure_mean,-0.204,0.11129
+Temperature,Temp_mean,-0.193,0.13283
+Temperature,Latitude,0.626,0.0
+Temperature,Longitude,-0.625,0.0
+Rainfall,Pressure_mean,0.167,0.19476
+Rainfall,Temp_mean,0.184,0.1525
+Rainfall,Latitude,0.449,0.00025
+Rainfall,Longitude,-0.685,0.0

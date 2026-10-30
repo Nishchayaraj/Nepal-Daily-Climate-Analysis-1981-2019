@@ -1,0 +1,31 @@
+Variable,Zone,Model,Window,Districts,Median_error,Q1,Q3
+Temperature,High mountains,Climatology,Full history (1981-2014),9,1.363,1.237,1.427
+Temperature,High mountains,Climatology,Post-2004 only (2004-2014),9,1.353,1.241,1.419
+Temperature,High mountains,SARIMA,Full history (1981-2014),9,1.349,1.234,1.419
+Temperature,High mountains,SARIMA,Post-2004 only (2004-2014),9,1.349,1.24,1.411
+Temperature,High mountains,Seasonal-naive,Last training year,9,1.438,1.39,1.55
+Temperature,Hills,Climatology,Full history (1981-2014),24,0.887,0.869,1.02
+Temperature,Hills,Climatology,Post-2004 only (2004-2014),24,0.894,0.839,0.983
+Temperature,Hills,SARIMA,Full history (1981-2014),24,0.876,0.867,1.02
+Temperature,Hills,SARIMA,Post-2004 only (2004-2014),24,0.892,0.837,0.984
+Temperature,Hills,Seasonal-naive,Last training year,24,1.006,0.948,1.055
+Temperature,Lowlands & low hills,Climatology,Full history (1981-2014),29,0.985,0.946,1.014
+Temperature,Lowlands & low hills,Climatology,Post-2004 only (2004-2014),29,1.018,0.977,1.123
+Temperature,Lowlands & low hills,SARIMA,Full history (1981-2014),29,0.974,0.955,1.05
+Temperature,Lowlands & low hills,SARIMA,Post-2004 only (2004-2014),29,1.02,0.977,1.118
+Temperature,Lowlands & low hills,Seasonal-naive,Last training year,29,1.22,1.197,1.376
+Rainfall,High mountains,Climatology,Full history (1981-2014),9,68.114,63.87,72.938
+Rainfall,High mountains,Climatology,Post-2004 only (2004-2014),9,64.484,55.89,65.797
+Rainfall,High mountains,SARIMA,Full history (1981-2014),9,66.98,56.19,69.248
+Rainfall,High mountains,SARIMA,Post-2004 only (2004-2014),9,65.752,53.614,67.613
+Rainfall,High mountains,Seasonal-naive,Last training year,9,67.655,54.159,77.184
+Rainfall,Hills,Climatology,Full history (1981-2014),24,66.283,60.679,80.288
+Rainfall,Hills,Climatology,Post-2004 only (2004-2014),24,49.039,47.787,55.841
+Rainfall,Hills,SARIMA,Full history (1981-2014),24,52.001,49.636,54.488
+Rainfall,Hills,SARIMA,Post-2004 only (2004-2014),24,50.381,49.45,53.057
+Rainfall,Hills,Seasonal-naive,Last training year,24,59.02,56.909,61.969
+Rainfall,Lowlands & low hills,Climatology,Full history (1981-2014),29,65.716,58.526,74.269
+Rainfall,Lowlands & low hills,Climatology,Post-2004 only (2004-2014),29,54.555,51.99,61.844
+Rainfall,Lowlands & low hills,SARIMA,Full history (1981-2014),29,57.886,55.163,64.504
+Rainfall,Lowlands & low hills,SARIMA,Post-2004 only (2004-2014),29,55.474,53.063,64.062
+Rainfall,Lowlands & low hills,Seasonal-naive,Last training year,29,64.978,62.357,70.279

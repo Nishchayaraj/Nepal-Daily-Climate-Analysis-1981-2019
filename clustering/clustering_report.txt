@@ -1,0 +1,74 @@
+================================================================
+CLUSTERING REPORT - Nepal climate zones
+================================================================
+Districts: 62
+Features used (standardized): Temp_mean, Annual_rain_mm, Monsoon_rain_share, Seasonal_temp_swing
+Reminder: rainfall features use the full 1981-2019 period (2004 jump included).
+
+Step A: trying k = 2..8
+ k  inertia  silhouette
+ 2  131.138       0.526
+ 3   88.711       0.382
+ 4   64.383       0.404
+ 5   53.328       0.349
+ 6   45.029       0.395
+ 7   38.921       0.410
+ 8   32.536       0.354
+  saved 7_choose_k.png
+Highest silhouette: k = 2. Chosen k = 3 (silhouette 0.382).
+NOTE: k = 2 scores higher statistically, and the elbow curve is smooth with no sharp bend. k = 3 is chosen mainly because it gives zones that are easy to interpret. Say this openly in your presentation.
+
+Step B: final K-Means with k = 3
+
+Zone profiles (average of each feature):
+                      Districts  Temp_mean  Annual_rain_mm  Monsoon_rain_share  Seasonal_temp_swing  Pressure_mean  Winter_MinTemp  Pressure_min  Pressure_max
+Zone                                                                                                                                                          
+Lowlands & low hills         29      21.79         1019.63                0.82                15.83          91.92            9.26          80.1          98.8
+Hills                        24      13.49          854.74                0.79                14.31          79.00            1.99          68.7          83.9
+High mountains                9       2.77          558.65                0.74                18.00          64.21          -11.05          56.2          73.8
+
+Note: zone names are descriptive labels based on the temperature ranking, not official regions. Check the member lists below.
+
+Districts in each zone:
+  Lowlands & low hills (29): Arghakhanchi, Banke, Bara, Bardiya, Chitawan, Dadeldhura, Dailekh, Dang, Dhanusa, Gulmi, Ilam, Jhapa, Kailali, Kanchanpur, Mahottari, Makwanpur, Morang, Nawalparasi, Palpa, Routahat, Rupandehi, Salyan, Saptari, Sarlahi, Sindhuli, Sunsari, Surkhet, Syangja, Udayapur
+  Hills (24): Baglung, Bhaktapur, Dhading, Dhankuta, Dolkha, Doti, Gorkha, Jumla, Kabhre, Kaski, Kathmandu, Lalitpur, Lamjung, Myagdi, Nuwakot, Okhaldhunga, Panchther, Parbat, Rasuwa, Rukum, Sankhuwasabha, Tanahun, Taplejung, Terhathum
+  High mountains (9): Baitadi, Bajang, Darchula, Dolpa, Humla, Manang, Mugu, Mustang, Solukhumbu
+
+Altitude check (pressure: lower = higher altitude):
+  Pressure ranges overlap for: Lowlands & low hills and Hills; Hills and High mountains - some districts are borderline between zones.
+
+Step C: representative districts (use these for forecasting in Step 5)
+  Lowlands & low hills: Nawalparasi   [closest three: Nawalparasi (0.25), Chitawan (0.26), Makwanpur (0.31)]
+  Hills: Lamjung   [closest three: Lamjung (0.24), Tanahun (0.24), Kaski (0.42)]
+  High mountains: Dolpa   [closest three: Dolpa (0.89), Bajang (1.11), Manang (1.13)]
+
+  How spread out is each zone? (average distance to the zone centre; a representative far from 0 is less typical)
+    Lowlands & low hills   average 0.93, representative 0.25
+    Hills                  average 0.78, representative 0.24
+    High mountains         average 1.84, representative 0.89
+
+Where the three EDA districts fall:
+  Banke: Lowlands & low hills
+  Kathmandu: Hills
+  Humla: High mountains
+
+Most borderline districts (lowest silhouette; negative = may fit another zone better):
+  Gulmi          Lowlands & low hills silhouette -0.09
+  Mustang        High mountains     silhouette -0.04
+  Dadeldhura     Lowlands & low hills silhouette +0.01
+  Darchula       High mountains     silhouette +0.07
+  Baitadi        High mountains     silhouette +0.07
+
+Step D: how much does the result depend on the feature choice?
+  (agreement with the main result: 1.00 = identical groups, 0 = unrelated)
+  All 13 numeric columns (incl. lat/lon)                         0.65
+  PCA on all columns (3 components, 90% of variation)            0.65
+  Chosen features without Mean temp                              0.57
+  Chosen features without Annual rainfall                        0.68
+  Chosen features without Monsoon rain share                     0.94
+  Chosen features without Seasonal temp swing                    0.75
+
+Saving figures and tables:
+  saved 8_cluster_map.png
+  saved 9_cluster_profiles.png
+  (the first two PCA axes capture 87% of the variation in the 4 features)

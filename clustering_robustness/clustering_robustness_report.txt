@@ -1,0 +1,127 @@
+========================================================================
+CLUSTERING ROBUSTNESS REPORT - how trustworthy are the climate zones?
+========================================================================
+Districts: 62. Zones: k = 3. Baseline features: Temp_mean, Annual_rain_mm, Monsoon_rain_share, Seasonal_temp_swing
+Official belts: {'Terai': 17, 'Hill': 32, 'Mountain': 13} (census scheme; see the top of the script for the source)
+Check: the baseline reproduces the Step 4 zones (exactly).
+
+========================================================================
+A. SENSITIVITY: do the zones survive other features and other algorithms?
+========================================================================
+Zone sizes are warmest zone / middle zone / coldest zone.
+                    Analysis Zone_sizes  Silhouette  ARI_vs_baseline  Districts_changed_vs_baseline  ARI_vs_official  Match_official_pct
+                    Baseline    29/24/9       0.382             1.00                              0             0.32                71.0
+                  Rain 2004+    21/32/9       0.374             0.60                              8             0.28                71.0
+              Rain 1981-2003    27/26/9       0.390             0.89                              2             0.36                74.2
+            No monsoon share    28/25/9       0.422             0.94                              1             0.34                72.6
+Rain 2004+, no monsoon share    25/28/9       0.370             0.68                              6             0.25                67.7
+        Temp + altitude only    29/26/7       0.535             0.82                              4             0.32                71.0
+           Ward hierarchical   27/23/12       0.372             0.69                              7             0.39                75.8
+            Gaussian mixture   19/32/11       0.388             0.47                             12             0.40                77.4
+
+  Rainfall from 2004+ only moves 8 districts (agreement 0.60); rainfall from before 2004 moves 2 (agreement 0.89).
+  Pre-2004 versus post-2004 rainfall features agree with each other at 0.60.
+  Dropping the monsoon share moves 1 district(s), so that feature hardly matters.
+  Temperature + altitude only: silhouette 0.54 versus 0.38 for the baseline; agreement with the baseline 0.82.
+  Ward agrees with K-Means at 0.69. The Gaussian mixture agrees at 0.47; with only 62 districts it cannot estimate a full covariance reliably (full-covariance versions collapse into one huge and one or two tiny groups), so treat it as a weak check.
+
+========================================================================
+B. WHICH NUMBER OF ZONES IS BEST SUPPORTED?
+========================================================================
+ k  BIC_GMM_diagonal  BIC_GMM_full  Silhouette_KMeans_baseline  Silhouette_Ward_baseline  Silhouette_KMeans_temp_altitude
+ 1           736.811       636.991                         NaN                       NaN                              NaN
+ 2           629.308       531.312                       0.526                     0.517                            0.525
+ 3           551.868       509.203                       0.382                     0.372                            0.535
+ 4           521.843       489.178                       0.404                     0.387                            0.474
+ 5           513.198       457.695                       0.349                     0.414                            0.476
+ 6           523.192       468.838                       0.395                     0.409                            0.491
+ 7           514.247       380.903                       0.410                     0.358                            0.485
+ 8           531.935       350.917                       0.354                     0.360                            0.484
+  Best k by silhouette, KMeans baseline: 2
+  Best k by silhouette, Ward baseline: 2
+  Best k by silhouette, KMeans temp altitude: 3
+  Best k by BIC (diagonal mixture): 5
+
+========================================================================
+C. STABILITY: 500 random 80% subsets of the districts
+========================================================================
+Running the resampling (about 1-3 minutes) ...
+Agreement between each resample and the full-data zones (ARI):
+ k  Mean_ARI  P5_ARI  P95_ARI             Features
+ 2      0.91    0.79     1.00             Baseline
+ 3      0.75    0.47     1.00             Baseline
+ 4      0.87    0.53     1.00             Baseline
+ 5      0.73    0.57     0.93             Baseline
+ 6      0.73    0.53     0.93             Baseline
+ 2      0.70    0.07     1.00 Temp + altitude only
+ 3      0.99    1.00     1.00 Temp + altitude only
+ 4      0.80    0.59     1.00 Temp + altitude only
+ 5      0.88    0.63     1.00 Temp + altitude only
+ 6      0.85    0.70     1.00 Temp + altitude only
+  Most stable k: 2 (baseline features), 3 (temperature + altitude only).
+
+Per-zone stability at k = 3 (Jaccard; > 0.75 stable, 0.6-0.75 uncertain):
+  Lowlands & low hills   0.84
+  Hills                  0.83
+  High mountains         0.93
+
+Districts with confidence below 0.6 (8): Gulmi (0.31, Lowlands & low hills), Morang (0.45, Lowlands & low hills), Sunsari (0.46, Lowlands & low hills), Udayapur (0.48, Lowlands & low hills), Saptari (0.49, Lowlands & low hills), Jhapa (0.49, Lowlands & low hills), Ilam (0.50, Lowlands & low hills), Sindhuli (0.51, Lowlands & low hills)
+Districts with confidence of at least 0.9: 51 of 62.
+
+========================================================================
+D. DO THE ZONES MATCH NEPAL'S OFFICIAL MOUNTAIN / HILL / TERAI BELTS?
+========================================================================
+Districts by official belt (rows) and our zone (columns):
+               Lowlands & low hills  Hills  High mountains
+Official_belt                                             
+Terai                            17      0               0
+Hill                             12     19               1
+Mountain                          0      5               8
+
+  Agreement: ARI 0.32, NMI 0.45, 71% of districts in the matching zone.
+  Terai districts in our lowland zone: 17 of 17.
+  Mountain districts in our high-mountain zone: 8 of 13.
+  If Dhading, Gorkha and Rukum are counted as Mountain (2017 Act), ARI changes from 0.32 to 0.29. Our zone for them: Dhading = Hills, Gorkha = Hills, Rukum = Hills.
+
+  The 18 districts where zone and official belt disagree:
+    Official Hill, our zone 'Lowlands & low hills' (12): Arghakhanchi, Dadeldhura, Dailekh, Gulmi, Ilam, Makwanpur [Inner Terai, counted as Hill], Palpa, Salyan, Sindhuli [Inner Terai, counted as Hill], Surkhet [Inner Terai, counted as Hill], Syangja, Udayapur [Inner Terai, counted as Hill]
+    Official Hill, our zone 'High mountains' (1): Baitadi
+    Official Mountain, our zone 'Hills' (5): Dolkha, Jumla, Rasuwa, Sankhuwasabha, Taplejung
+  Of these, 4 are 'Inner Terai' districts that the census counts as Hill although they are low-lying valleys: Makwanpur, Sindhuli, Surkhet, Udayapur.
+  4 of the 18 mismatches are also low-confidence districts.
+
+  Pressure (a proxy for altitude; lower = higher) by official belt:
+               count   min  mean   max
+Official_belt                         
+Terai             17  86.5  93.7  98.8
+Hill              32  73.8  83.3  95.0
+Mountain          13  56.2  67.7  81.9
+  The official belts overlap on this altitude proxy, because each district gets a single label.
+
+  With only k = 2: 10 of 13 Mountain districts fall in the cold zone, and 1 of 49 Hill/Terai districts do.
+
+  Agreement with the official belts for every analysis (k = 3):
+                    Analysis  ARI_vs_official  Match_official_pct
+                    Baseline             0.32                71.0
+                  Rain 2004+             0.28                71.0
+              Rain 1981-2003             0.36                74.2
+            No monsoon share             0.34                72.6
+Rain 2004+, no monsoon share             0.25                67.7
+        Temp + altitude only             0.32                71.0
+           Ward hierarchical             0.39                75.8
+            Gaussian mixture             0.40                77.4
+
+========================================================================
+SUMMARY
+========================================================================
+  1. Feature sensitivity: the zones are robust to dropping the monsoon share (1 district moves) but sensitive to the 2004 break (8 districts move when only 2004+ rainfall is used).
+  2. Choice of k: silhouette favours k = 2 on the baseline features; on temperature + altitude only the best is k = 3.
+  3. Stability at k = 3: mean agreement 0.75 (5th percentile 0.47); zone stabilities 0.84, 0.83, 0.93; 8 borderline districts.
+  4. Official belts: all Terai districts land in the lowland zone; the disagreement is at the Hill/Mountain edge and among low hills. 18 of 62 districts disagree.
+
+Saving figures and tables:
+  saved 24_feature_sensitivity.png
+  saved 25_choosing_k.png
+  saved 26_stability.png
+  saved 27_official_comparison.png
+  saved 28_dendrogram.png

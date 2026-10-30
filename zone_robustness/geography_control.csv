@@ -1,0 +1,13 @@
+Yardstick,Variable,Zone_definition,R2_zone_only,R2_longitude_only,R2_both,p_zone_adds_to_longitude,p_longitude_adds_to_zone
+main,Temperature,Baseline zones (Step 4),0.6606,0.3209,0.7542,0.0,0.0
+main,Temperature,Temperature + altitude zones,0.5915,0.3209,0.7706,0.0,0.0
+main,Temperature,Stable core (baseline zones),0.7148,0.2748,0.7913,0.0,0.0001
+main,Rainfall,Baseline zones (Step 4),0.2709,0.6141,0.6962,0.001,0.0
+main,Rainfall,Temperature + altitude zones,0.1715,0.6141,0.6878,0.0022,0.0
+main,Rainfall,Stable core (baseline zones),0.3763,0.6297,0.6892,0.0163,0.0
+relative to variability,Temperature,Baseline zones (Step 4),0.1595,0.044,0.1651,0.0197,0.5368
+relative to variability,Temperature,Temperature + altitude zones,0.0858,0.044,0.1089,0.1301,0.2256
+relative to variability,Temperature,Stable core (baseline zones),0.1644,0.1247,0.2517,0.0251,0.0235
+relative to variability,Rainfall,Baseline zones (Step 4),0.4432,0.3952,0.6426,0.0,0.0
+relative to variability,Rainfall,Temperature + altitude zones,0.2101,0.3952,0.5339,0.0005,0.0
+relative to variability,Rainfall,Stable core (baseline zones),0.3517,0.3439,0.6037,0.0,0.0

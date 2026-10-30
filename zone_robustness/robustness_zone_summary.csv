@@ -1,0 +1,37 @@
+Yardstick,Zone_definition,Variable,Zone,Districts,Median_error,Q1,Q3
+main,Baseline zones (Step 4),Temperature,Lowlands & low hills,29,0.974,0.955,1.05
+main,Baseline zones (Step 4),Temperature,Hills,24,0.876,0.867,1.02
+main,Baseline zones (Step 4),Temperature,High mountains,9,1.349,1.234,1.419
+main,Temperature + altitude zones,Temperature,Lowlands & low hills,29,0.975,0.958,1.122
+main,Temperature + altitude zones,Temperature,Hills,26,0.914,0.87,1.02
+main,Temperature + altitude zones,Temperature,High mountains,7,1.37,1.343,1.42
+main,Stable core (baseline zones),Temperature,Lowlands & low hills,21,1.027,0.968,1.122
+main,Stable core (baseline zones),Temperature,Hills,23,0.876,0.864,1.02
+main,Stable core (baseline zones),Temperature,High mountains,7,1.37,1.343,1.42
+main,Baseline zones (Step 4),Rainfall,Lowlands & low hills,29,57.886,55.164,64.504
+main,Baseline zones (Step 4),Rainfall,Hills,24,52.001,49.636,54.488
+main,Baseline zones (Step 4),Rainfall,High mountains,9,66.98,56.19,69.248
+main,Temperature + altitude zones,Rainfall,Lowlands & low hills,29,58.64,55.164,64.569
+main,Temperature + altitude zones,Rainfall,Hills,26,52.004,49.786,54.529
+main,Temperature + altitude zones,Rainfall,High mountains,7,56.902,54.549,67.316
+main,Stable core (baseline zones),Rainfall,Lowlands & low hills,21,60.201,56.868,66.595
+main,Stable core (baseline zones),Rainfall,Hills,23,51.999,49.486,53.335
+main,Stable core (baseline zones),Rainfall,High mountains,7,56.902,54.549,67.316
+relative to variability,Baseline zones (Step 4),Temperature,Lowlands & low hills,29,0.194,0.188,0.206
+relative to variability,Baseline zones (Step 4),Temperature,Hills,24,0.193,0.184,0.211
+relative to variability,Baseline zones (Step 4),Temperature,High mountains,9,0.218,0.21,0.219
+relative to variability,Temperature + altitude zones,Temperature,Lowlands & low hills,29,0.194,0.188,0.206
+relative to variability,Temperature + altitude zones,Temperature,Hills,26,0.195,0.184,0.211
+relative to variability,Temperature + altitude zones,Temperature,High mountains,7,0.211,0.207,0.221
+relative to variability,Stable core (baseline zones),Temperature,Lowlands & low hills,21,0.194,0.186,0.199
+relative to variability,Stable core (baseline zones),Temperature,Hills,23,0.191,0.184,0.209
+relative to variability,Stable core (baseline zones),Temperature,High mountains,7,0.211,0.207,0.221
+relative to variability,Baseline zones (Step 4),Rainfall,Lowlands & low hills,29,0.475,0.461,0.489
+relative to variability,Baseline zones (Step 4),Rainfall,Hills,24,0.466,0.449,0.487
+relative to variability,Baseline zones (Step 4),Rainfall,High mountains,9,0.673,0.518,0.688
+relative to variability,Temperature + altitude zones,Rainfall,Lowlands & low hills,29,0.477,0.464,0.491
+relative to variability,Temperature + altitude zones,Rainfall,Hills,26,0.466,0.453,0.489
+relative to variability,Temperature + altitude zones,Rainfall,High mountains,7,0.57,0.499,0.676
+relative to variability,Stable core (baseline zones),Rainfall,Lowlands & low hills,21,0.477,0.464,0.489
+relative to variability,Stable core (baseline zones),Rainfall,Hills,23,0.466,0.445,0.48
+relative to variability,Stable core (baseline zones),Rainfall,High mountains,7,0.57,0.499,0.676

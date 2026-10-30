@@ -1,0 +1,4 @@
+Zone,Districts,Temp_mean,Annual_rain_mm,Monsoon_rain_share,Seasonal_temp_swing,Pressure_mean,Winter_MinTemp,Pressure_min,Pressure_max
+Lowlands & low hills,29,21.79,1019.63,0.82,15.83,91.92,9.26,80.1,98.8
+Hills,24,13.49,854.74,0.79,14.31,79.0,1.99,68.7,83.9
+High mountains,9,2.77,558.65,0.74,18.0,64.21,-11.05,56.2,73.8

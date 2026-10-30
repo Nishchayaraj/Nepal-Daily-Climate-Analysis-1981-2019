@@ -1,0 +1,45 @@
+Variable,Feature,Importance
+Temperature,Month of year,-0.00669
+Temperature,"Own value, last month",0.03791
+Temperature,"Own value, 2 months ago",-0.00208
+Temperature,"Own value, 3 months ago",0.01437
+Temperature,"Own value, same month last year",-0.01541
+Temperature,Own 12-month average level,-0.00158
+Temperature,Latitude,0.00027
+Temperature,Longitude,0.00125
+Temperature,Altitude proxy (mean pressure),-0.00093
+Temperature,"Rainfall, last month",0.01362
+Temperature,"Rainfall, 12-month average",0.01561
+Temperature,"Specific humidity, last month",-0.00034
+Temperature,"Specific humidity, 12-month average",0.00209
+Temperature,"Relative humidity, last month",0.00146
+Temperature,"Relative humidity, 12-month average",-0.00037
+Temperature,"Pressure, last month",0.011
+Temperature,"Pressure, 12-month average",0.00727
+Temperature,"Wind speed (10 m), last month",0.00259
+Temperature,"Wind speed (10 m), 12-month average",-0.00291
+Temperature,"Daily temperature range, last month",-0.0008
+Temperature,"Daily temperature range, 12-month average",-0.00152
+Temperature,After-2004 flag,0.0
+Rainfall,Month of year,5.7779
+Rainfall,"Own value, last month",1.7407
+Rainfall,"Own value, 2 months ago",0.08383
+Rainfall,"Own value, 3 months ago",0.43103
+Rainfall,"Own value, same month last year",1.98304
+Rainfall,Own 12-month average level,2.39887
+Rainfall,Latitude,0.12009
+Rainfall,Longitude,0.5263
+Rainfall,Altitude proxy (mean pressure),0.02014
+Rainfall,"Temperature, last month",0.39632
+Rainfall,"Temperature, 12-month average",0.03115
+Rainfall,"Specific humidity, last month",0.36644
+Rainfall,"Specific humidity, 12-month average",-0.05144
+Rainfall,"Relative humidity, last month",2.6685
+Rainfall,"Relative humidity, 12-month average",0.34201
+Rainfall,"Pressure, last month",0.83187
+Rainfall,"Pressure, 12-month average",-0.26214
+Rainfall,"Wind speed (10 m), last month",0.03137
+Rainfall,"Wind speed (10 m), 12-month average",-0.10764
+Rainfall,"Daily temperature range, last month",-0.04458
+Rainfall,"Daily temperature range, 12-month average",-0.03374
+Rainfall,After-2004 flag,0.0

@@ -1,0 +1,11 @@
+k,Mean_ARI,P5_ARI,P95_ARI,Features
+2,0.9051,0.7891,1.0,Baseline
+3,0.7461,0.4695,1.0,Baseline
+4,0.8717,0.5274,1.0,Baseline
+5,0.7304,0.5719,0.9312,Baseline
+6,0.7274,0.5273,0.931,Baseline
+2,0.7031,0.0675,1.0,Temp + altitude only
+3,0.9916,1.0,1.0,Temp + altitude only
+4,0.8044,0.5888,1.0,Temp + altitude only
+5,0.8793,0.6266,1.0,Temp + altitude only
+6,0.8528,0.7043,1.0,Temp + altitude only

@@ -1,0 +1,183 @@
+========================================================================
+ZONE ROBUSTNESS CHECK - do the forecasting conclusions depend on the zones?
+========================================================================
+District-level forecast errors are reused (they do not depend on the zones); only the
+grouping of districts changes.
+
+Baseline versus temperature + altitude zones: 4 districts differ:
+  Baitadi    High mountains  ->  Hills
+  Darchula   High mountains  ->  Hills
+  Doti       Hills  ->  Lowlands & low hills
+  Gulmi      Lowlands & low hills  ->  Hills
+Stable core: 51 districts. Left out (11): Baitadi, Darchula, Doti, Gulmi, Ilam, Jhapa, Morang, Saptari, Sindhuli, Sunsari, Udayapur
+
+========================================================================
+CHECKS 1-2  TEMPERATURE: SARIMA error by zone (RMSE (C))
+========================================================================
+
+Baseline zones (Step 4)
+                      Districts  Median_error    Q1    Q3
+Zone                                                     
+Lowlands & low hills         29          0.97  0.95  1.05
+Hills                        24          0.88  0.87  1.02
+High mountains                9          1.35  1.23  1.42
+  Kruskal-Wallis: p < 0.001, effect size 0.44
+  Easiest to hardest: Hills < Lowlands & low hills < High mountains
+
+Temperature + altitude zones
+                      Districts  Median_error    Q1    Q3
+Zone                                                     
+Lowlands & low hills         29          0.98  0.96  1.12
+Hills                        26          0.91  0.87  1.02
+High mountains                7          1.37  1.34  1.42
+  Kruskal-Wallis: p < 0.001, effect size 0.36
+  Easiest to hardest: Hills < Lowlands & low hills < High mountains
+
+Stable core (baseline zones)
+                      Districts  Median_error    Q1    Q3
+Zone                                                     
+Lowlands & low hills         21          1.03  0.97  1.12
+Hills                        23          0.88  0.86  1.02
+High mountains                7          1.37  1.34  1.42
+  Kruskal-Wallis: p < 0.001, effect size 0.50
+  Easiest to hardest: Hills < Lowlands & low hills < High mountains
+
+  Temperature: all zone definitions give the same ordering: YES; significant (p < 0.05) in 3 of 3.
+
+========================================================================
+CHECKS 1-2  RAINFALL: SARIMA error by zone (RMSE (% of average monthly rainfall))
+========================================================================
+
+Baseline zones (Step 4)
+                      Districts  Median_error     Q1     Q3
+Zone                                                       
+Lowlands & low hills         29         57.89  55.16  64.50
+Hills                        24         52.00  49.64  54.49
+High mountains                9         66.98  56.19  69.25
+  Kruskal-Wallis: p < 0.001, effect size 0.30
+  Easiest to hardest: Hills < Lowlands & low hills < High mountains
+
+Temperature + altitude zones
+                      Districts  Median_error     Q1     Q3
+Zone                                                       
+Lowlands & low hills         29         58.64  55.16  64.57
+Hills                        26         52.00  49.79  54.53
+High mountains                7         56.90  54.55  67.32
+  Kruskal-Wallis: p = 0.001, effect size 0.22
+  Easiest to hardest: Hills < High mountains < Lowlands & low hills
+
+Stable core (baseline zones)
+                      Districts  Median_error     Q1     Q3
+Zone                                                       
+Lowlands & low hills         21          60.2  56.87  66.60
+Hills                        23          52.0  49.49  53.34
+High mountains                7          56.9  54.55  67.32
+  Kruskal-Wallis: p < 0.001, effect size 0.39
+  Easiest to hardest: Hills < High mountains < Lowlands & low hills
+
+  Rainfall: all zone definitions give the same ordering: NO; significant (p < 0.05) in 3 of 3.
+
+========================================================================
+CHECK 5  A DIFFERENT YARDSTICK: error relative to the variability of the months
+========================================================================
+Error = RMSE divided by the standard deviation of the district's monthly values in
+2015-2019. 0 = nearly perfect, 1 = no better than guessing the average month.
+Why: the rainfall error used so far is a % of average rainfall, so it is inflated in dry
+districts (Spearman correlation with mean monthly rainfall: -0.47, p < 0.001).
+
+TEMPERATURE
+  Baseline zones (Step 4)          medians: Lowlands 0.194, Hills 0.193, High 0.218   p = 0.012   Hills < Lowlands & low hills < High mountains
+  Temperature + altitude zones     medians: Lowlands 0.194, Hills 0.195, High 0.211   p = 0.100   Lowlands & low hills < Hills < High mountains
+  Stable core (baseline zones)     medians: Lowlands 0.194, Hills 0.191, High 0.211   p = 0.046   Hills < Lowlands & low hills < High mountains
+  Correlation of this relative error with longitude: -0.26 (p = 0.039)
+
+RAINFALL
+  Baseline zones (Step 4)          medians: Lowlands 0.475, Hills 0.466, High 0.673   p = 0.003   Hills < Lowlands & low hills < High mountains
+  Temperature + altitude zones     medians: Lowlands 0.477, Hills 0.466, High 0.570   p = 0.033   Hills < Lowlands & low hills < High mountains
+  Stable core (baseline zones)     medians: Lowlands 0.477, Hills 0.466, High 0.570   p = 0.015   Hills < Lowlands & low hills < High mountains
+  Correlation of this relative error with longitude: -0.61 (p < 0.001)
+
+========================================================================
+THE THREE REPRESENTATIVE DISTRICTS UNDER EACH ZONE DEFINITION (main yardstick)
+========================================================================
+Percentile = share of districts in the same zone with a SMALLER error (50% = typical).
+  Nawalparasi  Temperature  | baseline: Lowlands & low hills (percentile 32%) | temp+alt: Lowlands & low hills (percentile 29%)
+  Nawalparasi  Rainfall     | baseline: Lowlands & low hills (percentile 11%) | temp+alt: Lowlands & low hills (percentile 11%)
+  Lamjung      Temperature  | baseline: Hills (percentile 87%) | temp+alt: Hills (percentile 84%)
+  Lamjung      Rainfall     | baseline: Hills (percentile 74%) | temp+alt: Hills (percentile 68%)
+  Dolpa        Temperature  | baseline: High mountains (percentile 50%) | temp+alt: High mountains (percentile 33%)
+  Dolpa        Rainfall     | baseline: High mountains (percentile 38%) | temp+alt: High mountains (percentile 50%)
+
+  Under the temperature + altitude zones the representatives fall in 3 different zone(s).
+
+========================================================================
+COST OF THE 2004 BREAK BY ZONE (training on 2004-2014 only vs the full history)
+========================================================================
+Median change in rainfall error when the training window starts in 2004; negative = better.
+
+Climatology:
+Zone_definition       Baseline zones (Step 4)  Stable core (baseline zones)  Temperature + altitude zones
+Zone                                                                                                     
+Lowlands & low hills                    -16.5                         -18.8                         -13.1
+Hills                                   -25.4                         -25.4                         -25.4
+High mountains                          -10.4                         -22.4                         -22.4
+
+SARIMA:
+Zone_definition       Baseline zones (Step 4)  Stable core (baseline zones)  Temperature + altitude zones
+Zone                                                                                                     
+Lowlands & low hills                     -2.3                          -2.3                          -2.3
+Hills                                    -1.8                          -1.8                          -1.9
+High mountains                           -2.1                          -2.4                          -2.4
+
+========================================================================
+CHECK 3  NO ZONES: correlation of error with altitude proxy, latitude and longitude
+========================================================================
+Spearman rank correlation across the 62 districts (main yardstick). Pressure falls as
+altitude rises, so a NEGATIVE correlation with pressure means error grows with altitude.
+   Variable     Predictor  Spearman_rho  p_value
+Temperature Pressure_mean        -0.204  0.11129
+Temperature     Temp_mean        -0.193  0.13283
+Temperature      Latitude         0.626  0.00000
+Temperature     Longitude        -0.625  0.00000
+   Rainfall Pressure_mean         0.167  0.19476
+   Rainfall     Temp_mean         0.184  0.15250
+   Rainfall      Latitude         0.449  0.00025
+   Rainfall     Longitude        -0.685  0.00000
+
+========================================================================
+CHECK 4  ZONES OR GEOGRAPHY? Fit error ~ longitude + zone
+========================================================================
+R2 = share of the variation in error explained. 'p zone adds' tests whether the zones
+explain anything beyond longitude; 'p longitude adds' tests the reverse.
+              Yardstick    Variable  R2 zone  R2 lon  R2 both  p zone adds  p lon adds       Zones
+                   main Temperature   0.6606  0.3209   0.7542       0.0000      0.0000    Baseline
+                   main Temperature   0.5915  0.3209   0.7706       0.0000      0.0000 Temperature
+                   main Temperature   0.7148  0.2748   0.7913       0.0000      0.0001      Stable
+                   main    Rainfall   0.2709  0.6141   0.6962       0.0010      0.0000    Baseline
+                   main    Rainfall   0.1715  0.6141   0.6878       0.0022      0.0000 Temperature
+                   main    Rainfall   0.3763  0.6297   0.6892       0.0163      0.0000      Stable
+relative to variability Temperature   0.1595  0.0440   0.1651       0.0197      0.5368    Baseline
+relative to variability Temperature   0.0858  0.0440   0.1089       0.1301      0.2256 Temperature
+relative to variability Temperature   0.1644  0.1247   0.2517       0.0251      0.0235      Stable
+relative to variability    Rainfall   0.4432  0.3952   0.6426       0.0000      0.0000    Baseline
+relative to variability    Rainfall   0.2101  0.3952   0.5339       0.0005      0.0000 Temperature
+relative to variability    Rainfall   0.3517  0.3439   0.6037       0.0000      0.0000      Stable
+
+========================================================================
+VERDICT
+========================================================================
+  Temperature
+    main yardstick: zones differ in 3 of 3 definitions; easiest Hills; hardest High mountains; same ordering throughout.
+    relative yardstick: zones differ in 2 of 3 definitions; hardest High mountains.
+    no zones: error vs altitude rho = +0.20 (p = 0.111); error vs longitude rho = -0.62 (p < 0.001).
+    zones or geography: longitude alone R2 = 0.32, zones alone 0.66; zones still add beyond longitude: p < 0.001.
+  Rainfall
+    main yardstick: zones differ in 3 of 3 definitions; easiest Hills; hardest High mountains, Lowlands & low hills; ordering changes.
+    relative yardstick: zones differ in 3 of 3 definitions; hardest High mountains.
+    no zones: error vs altitude rho = -0.17 (p = 0.195); error vs longitude rho = -0.68 (p < 0.001).
+    zones or geography: longitude alone R2 = 0.61, zones alone 0.27; zones still add beyond longitude: p = 0.001.
+
+Saving figures and tables:
+  saved 29_zone_definitions.png
+  saved 30_altitude_and_longitude.png
+  saved 31_relative_yardstick.png

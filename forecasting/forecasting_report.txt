@@ -1,0 +1,76 @@
+==================================================================
+FORECASTING REPORT - monthly temperature and rainfall
+==================================================================
+Districts: Nawalparasi, Lamjung, Dolpa  (representative districts from Step 4)
+Training: 1981-01 to 2014-12 (full history, 408 months)
+Testing : 2015-01 to 2019-12 (60 months)
+The 2004 rainfall jump is NOT removed; it is measured as a limitation below.
+
+Fitting models (about a minute) ...
+  Nawalparasi  Temperature  SARIMA(1, 0, 0)x(0, 1, 1)[12]  AIC 1030
+  Nawalparasi  Rainfall     SARIMA(2, 0, 0)x(1, 1, 1)[12]  AIC 4180
+  Lamjung      Temperature  SARIMA(1, 0, 0)x(0, 1, 1)[12]  AIC 963
+  Lamjung      Rainfall     SARIMA(2, 0, 0)x(1, 1, 1)[12]  AIC 3953
+  Dolpa        Temperature  SARIMA(0, 0, 1)x(0, 1, 1)[12]  AIC 1195
+  Dolpa        Rainfall     SARIMA(2, 0, 0)x(1, 1, 1)[12]  AIC 3873
+
+--- TEMPERATURE: long-range error (RMSE in C; lower is better) ---
+Model        Seasonal-naive  Climatology  SARIMA  DIAGNOSTIC: climatology 2004+ only SARIMA vs climatology
+District                                                                                                  
+Nawalparasi            1.20         0.99    0.96                                0.98                   +3%
+Lamjung                1.04         1.03    1.03                                0.98                    0%
+Dolpa                  1.51         1.36    1.35                                1.37                   +1%
+
+Bias in C (forecast minus actual; negative = forecasts too low):
+Model        Seasonal-naive  Climatology  SARIMA
+District                                        
+Nawalparasi           -0.31         0.19   -0.02
+Lamjung               -0.03         0.19    0.20
+Dolpa                 -0.51        -0.09   -0.09
+
+Share of the 60 test months inside SARIMA's 95% interval: Nawalparasi 93%, Lamjung 88%, Dolpa 92%
+
+--- TEMPERATURE: 1 month ahead (RMSE in C) ---
+Model        Seasonal-naive  SARIMA SARIMA vs seasonal-naive
+District                                                    
+Nawalparasi            1.32    0.91                     +31%
+Lamjung                1.18    0.95                     +20%
+Dolpa                  1.69    1.32                     +22%
+
+--- RAINFALL: long-range error (RMSE in mm; lower is better) ---
+Model        Seasonal-naive  Climatology  SARIMA  DIAGNOSTIC: climatology 2004+ only SARIMA vs climatology
+District                                                                                                  
+Nawalparasi           80.51       105.92   73.64                               70.91                  +30%
+Lamjung               74.89       126.23   80.00                               89.19                  +37%
+Dolpa                 43.26        54.40   45.45                               41.68                  +16%
+
+Bias in mm (forecast minus actual; negative = forecasts too low):
+Model        Seasonal-naive  Climatology  SARIMA
+District                                        
+Nawalparasi            4.65       -62.50  -11.83
+Lamjung              -11.01       -83.59  -33.38
+Dolpa                 -1.27       -27.54    7.33
+
+Share of the 60 test months inside SARIMA's 95% interval: Nawalparasi 88%, Lamjung 73%, Dolpa 95%
+
+--- RAINFALL: 1 month ahead (RMSE in mm) ---
+Model        Seasonal-naive  SARIMA SARIMA vs seasonal-naive
+District                                                    
+Nawalparasi           98.40   76.11                     +23%
+Lamjung               95.30   77.01                     +19%
+Dolpa                 53.03   45.10                     +15%
+
+--- RAINFALL LIMITATION: the 2004 jump ---
+District        1981-2003   2004-2014   2015-2019   train avg   (annual rainfall, mm)
+Nawalparasi           743        1423        1713         963
+Lamjung               566        1162        1762         759
+Dolpa                 463         973         958         628
+A model trained on all of 1981-2014 learns the 'train avg' level, but 2015-2019 is much wetter,
+so climatology under-forecasts rainfall (negative bias above). SARIMA copes better because it works
+with year-to-year seasonal changes, but it cannot know the jump happened.
+
+Saving figures and tables:
+  saved 10_temperature_forecasts.png
+  saved 11_rainfall_forecasts.png
+  saved 12_forecast_errors.png
+  saved 13_rainfall_break_limitation.png

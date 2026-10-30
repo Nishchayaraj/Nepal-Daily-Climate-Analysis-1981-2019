@@ -1,0 +1,37 @@
+District,Zone,Variable,Horizon,Model,RMSE,MAE,Bias
+Nawalparasi,Lowlands & low hills,Temperature,Long-range (60 months at once),Seasonal-naive,1.197,0.906,-0.306
+Nawalparasi,Lowlands & low hills,Temperature,Long-range (60 months at once),Climatology,0.99,0.749,0.188
+Nawalparasi,Lowlands & low hills,Temperature,Long-range (60 months at once),SARIMA,0.96,0.735,-0.024
+Nawalparasi,Lowlands & low hills,Temperature,1 month ahead,Seasonal-naive,1.324,0.997,0.013
+Nawalparasi,Lowlands & low hills,Temperature,1 month ahead,SARIMA,0.91,0.71,0.015
+Nawalparasi,Lowlands & low hills,Temperature,Long-range (60 months at once),DIAGNOSTIC: climatology 2004+ only,0.983,0.772,-0.245
+Nawalparasi,Lowlands & low hills,Rainfall,Long-range (60 months at once),Seasonal-naive,80.512,55.669,4.648
+Nawalparasi,Lowlands & low hills,Rainfall,Long-range (60 months at once),Climatology,105.918,70.458,-62.495
+Nawalparasi,Lowlands & low hills,Rainfall,Long-range (60 months at once),SARIMA,73.636,53.328,-11.834
+Nawalparasi,Lowlands & low hills,Rainfall,1 month ahead,Seasonal-naive,98.395,63.575,-0.251
+Nawalparasi,Lowlands & low hills,Rainfall,1 month ahead,SARIMA,76.11,51.298,-3.108
+Nawalparasi,Lowlands & low hills,Rainfall,Long-range (60 months at once),DIAGNOSTIC: climatology 2004+ only,70.908,49.461,-24.122
+Lamjung,Hills,Temperature,Long-range (60 months at once),Seasonal-naive,1.037,0.817,-0.029
+Lamjung,Hills,Temperature,Long-range (60 months at once),Climatology,1.027,0.847,0.194
+Lamjung,Hills,Temperature,Long-range (60 months at once),SARIMA,1.028,0.848,0.201
+Lamjung,Hills,Temperature,1 month ahead,Seasonal-naive,1.183,0.846,0.08
+Lamjung,Hills,Temperature,1 month ahead,SARIMA,0.947,0.716,0.145
+Lamjung,Hills,Temperature,Long-range (60 months at once),DIAGNOSTIC: climatology 2004+ only,0.983,0.78,0.058
+Lamjung,Hills,Rainfall,Long-range (60 months at once),Seasonal-naive,74.894,55.348,-11.014
+Lamjung,Hills,Rainfall,Long-range (60 months at once),Climatology,126.233,88.513,-83.593
+Lamjung,Hills,Rainfall,Long-range (60 months at once),SARIMA,80.002,58.635,-33.384
+Lamjung,Hills,Rainfall,1 month ahead,Seasonal-naive,95.299,63.796,-3.602
+Lamjung,Hills,Rainfall,1 month ahead,SARIMA,77.009,54.734,-9.405
+Lamjung,Hills,Rainfall,Long-range (60 months at once),DIAGNOSTIC: climatology 2004+ only,89.194,62.902,-49.973
+Dolpa,High mountains,Temperature,Long-range (60 months at once),Seasonal-naive,1.509,1.087,-0.514
+Dolpa,High mountains,Temperature,Long-range (60 months at once),Climatology,1.363,0.973,-0.091
+Dolpa,High mountains,Temperature,Long-range (60 months at once),SARIMA,1.346,0.961,-0.094
+Dolpa,High mountains,Temperature,1 month ahead,Seasonal-naive,1.693,1.234,0.083
+Dolpa,High mountains,Temperature,1 month ahead,SARIMA,1.323,0.979,-0.043
+Dolpa,High mountains,Temperature,Long-range (60 months at once),DIAGNOSTIC: climatology 2004+ only,1.37,1.012,-0.226
+Dolpa,High mountains,Rainfall,Long-range (60 months at once),Seasonal-naive,43.257,33.798,-1.273
+Dolpa,High mountains,Rainfall,Long-range (60 months at once),Climatology,54.403,35.235,-27.544
+Dolpa,High mountains,Rainfall,Long-range (60 months at once),SARIMA,45.448,35.891,7.331
+Dolpa,High mountains,Rainfall,1 month ahead,Seasonal-naive,53.033,38.808,-1.951
+Dolpa,High mountains,Rainfall,1 month ahead,SARIMA,45.099,33.13,1.558
+Dolpa,High mountains,Rainfall,Long-range (60 months at once),DIAGNOSTIC: climatology 2004+ only,41.679,31.343,1.222
