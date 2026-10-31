@@ -1,6 +1,6 @@
 # Nepal Daily Climate Analysis, 1981-2019
 
-**Climate zones and forecasting in Nepal.** A capstone project from MINspire 2026 by Team CAT-MAN-DU.
+**Climate zones and forecasting in Nepal.** A capstone project from MINspire 2026 by Nishchaya Raj Shrestha.
 
 
 MINspire 2026 was a hybrid machine learning and mathematics bootcamp led by Prof. Trushant Majmudar (NYU Courant). This project asks what 39 years of daily climate data can and cannot tell us about Nepal.
